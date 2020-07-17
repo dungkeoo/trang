@@ -1,0 +1,3372 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CodeUtility.Net</name>
+    </assembly>
+    <members>
+        <member name="T:CodeUtility.ArrayUtility">
+            <summary>
+            Array Utility
+            </summary>
+        </member>
+        <member name="M:CodeUtility.ArrayUtility.GetItem``1(``0[],System.Int32,CodeUtility.IndexOutOfRangeMode)">
+            <summary>
+            Trả về một phần tử tại vị trí lựa chọn trong mảng.
+            Nếu vị trí không hợp lệ thì có 2 tùy chọn là: trả về giá trị mặc định hoặc nắm lỗi ngoại lệ ra ngoài.
+            </summary>
+            <param name="array">Mảng cần lấy phần tử.</param>
+            <param name="index">Vị trí phần tử cần lấy trong mảng.</param>
+            <param name="mode">
+            Kiểu xử lý khi vị trí cần lấy không hợp lệ.
+            ReturnDefaultValue: trả về giá trị mặc định;
+            ThrowException: ném lỗi ngoại lệ ra ngoài.
+            </param>
+            <returns>Trả về một phần tử tại vị trí lựa chọn trong mảng.</returns>
+        </member>
+        <member name="M:CodeUtility.ArrayUtility.GetItem``1(``0[],System.Int32)">
+            <summary>
+            Trả về một phần tử tại vị trí lựa chọn trong mảng.
+            Nếu vị trí không hợp lệ thì trả về giá trị mặc định.
+            </summary>
+            <param name="array">Mảng cần lấy phần tử.</param>
+            <param name="index">Vị trí phần tử cần lấy trong mảng.</param>
+            <returns>Trả về một phần tử tại vị trí lựa chọn trong mảng.</returns>
+        </member>
+        <member name="T:CodeUtility.ConvertUtility">
+            <summary>
+            ConvertUtility
+            </summary>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToByte(System.Object,System.Nullable{System.Byte})">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu byte.
+            Trả về giá trị đã được chuyển đổi sang kiểu byte.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            Giá trị này có thể là null.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="defaultValue">Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu byte.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            Giá trị này có thể là null. 
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToByte(System.Object,System.Byte)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu byte.
+            Trả về giá trị đã được chuyển đổi sang kiểu byte.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="defaultValue">Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu byte.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToByte(System.Object)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu byte.
+            Trả về giá trị đã được chuyển đổi sang kiểu byte.
+            Nếu value chứa giá trị không hợp lệ, thì trả về 0.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu byte.
+            Nếu value chứa giá trị không hợp lệ, thì trả về 0.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToSByte(System.Object,System.Nullable{System.SByte})">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu sbyte.
+            Trả về giá trị đã được chuyển đổi sang kiểu sbyte.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            Giá trị này có thể là null.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="defaultValue">Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu sbyte.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            Giá trị này có thể là null. 
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToSByte(System.Object,System.SByte)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu sbyte.
+            Trả về giá trị đã được chuyển đổi sang kiểu sbyte.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="defaultValue">Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu sbyte.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToSByte(System.Object)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu sbyte.
+            Trả về giá trị đã được chuyển đổi sang kiểu sbyte.
+            Nếu value chứa giá trị không hợp lệ, thì trả về 0.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu sbyte.
+            Nếu value chứa giá trị không hợp lệ, thì trả về 0.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToShort(System.Object,System.Nullable{System.Int16})">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu short.
+            Trả về giá trị đã được chuyển đổi sang kiểu short.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            Giá trị này có thể là null.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="defaultValue">Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu short.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            Giá trị này có thể là null. 
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToShort(System.Object,System.Int16)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu short.
+            Trả về giá trị đã được chuyển đổi sang kiểu short.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="defaultValue">Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu short.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToShort(System.Object)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu short.
+            Trả về giá trị đã được chuyển đổi sang kiểu short.
+            Nếu value chứa giá trị không hợp lệ, thì trả về 0.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu short.
+            Nếu value chứa giá trị không hợp lệ, thì trả về 0.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToUShort(System.Object,System.Nullable{System.UInt16})">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu ushort.
+            Trả về giá trị đã được chuyển đổi sang kiểu ushort.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            Giá trị này có thể là null.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="defaultValue">Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu ushort.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            Giá trị này có thể là null. 
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToUShort(System.Object,System.UInt16)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu ushort.
+            Trả về giá trị đã được chuyển đổi sang kiểu ushort.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="defaultValue">Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu ushort.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToUShort(System.Object)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu ushort.
+            Trả về giá trị đã được chuyển đổi sang kiểu ushort.
+            Nếu value chứa giá trị không hợp lệ, thì trả về 0.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu ushort.
+            Nếu value chứa giá trị không hợp lệ, thì trả về 0.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToInt(System.Object,System.Nullable{System.Int32})">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu int.
+            Trả về giá trị đã được chuyển đổi sang kiểu int.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            Giá trị này có thể là null.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="defaultValue">Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu int.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            Giá trị này có thể là null. 
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToInt(System.Object,System.Int32)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu int.
+            Trả về giá trị đã được chuyển đổi sang kiểu int.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="defaultValue">Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu int.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToInt(System.Object)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu int.
+            Trả về giá trị đã được chuyển đổi sang kiểu int.
+            Nếu value chứa giá trị không hợp lệ, thì trả về 0.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu int.
+            Nếu value chứa giá trị không hợp lệ, thì trả về 0.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToUInt(System.Object,System.Nullable{System.UInt32})">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu uint.
+            Trả về giá trị đã được chuyển đổi sang kiểu uint.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            Giá trị này có thể là null.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="defaultValue">Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu uint.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            Giá trị này có thể là null. 
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToUInt(System.Object,System.UInt32)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu uint.
+            Trả về giá trị đã được chuyển đổi sang kiểu uint.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="defaultValue">Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu uint.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToUInt(System.Object)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu uint.
+            Trả về giá trị đã được chuyển đổi sang kiểu uint.
+            Nếu value chứa giá trị không hợp lệ, thì trả về 0.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu uint.
+            Nếu value chứa giá trị không hợp lệ, thì trả về 0.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToLong(System.Object,System.Nullable{System.Int64})">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu long.
+            Trả về giá trị đã được chuyển đổi sang kiểu long.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            Giá trị này có thể là null.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="defaultValue">Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu long.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            Giá trị này có thể là null. 
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToLong(System.Object,System.Int64)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu long.
+            Trả về giá trị đã được chuyển đổi sang kiểu long.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="defaultValue">Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu long.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToLong(System.Object)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu long.
+            Trả về giá trị đã được chuyển đổi sang kiểu long.
+            Nếu value chứa giá trị không hợp lệ, thì trả về 0.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu long.
+            Nếu value chứa giá trị không hợp lệ, thì trả về 0.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToULong(System.Object,System.Nullable{System.UInt64})">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu ulong.
+            Trả về giá trị đã được chuyển đổi sang kiểu ulong.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            Giá trị này có thể là null.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="defaultValue">Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu ulong.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            Giá trị này có thể là null. 
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToULong(System.Object,System.UInt64)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu ulong.
+            Trả về giá trị đã được chuyển đổi sang kiểu ulong.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="defaultValue">Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu ulong.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToULong(System.Object)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu ulong.
+            Trả về giá trị đã được chuyển đổi sang kiểu ulong.
+            Nếu value chứa giá trị không hợp lệ, thì trả về 0.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu ulong.
+            Nếu value chứa giá trị không hợp lệ, thì trả về 0.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToFloat(System.Object,System.Nullable{System.Single})">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu float.
+            Trả về giá trị đã được chuyển đổi sang kiểu float.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            Giá trị này có thể là null.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="defaultValue">Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu float.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            Giá trị này có thể là null. 
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToFloat(System.Object,System.Single)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu float.
+            Trả về giá trị đã được chuyển đổi sang kiểu float.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="defaultValue">Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu float.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToFloat(System.Object)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu float.
+            Trả về giá trị đã được chuyển đổi sang kiểu float.
+            Nếu value chứa giá trị không hợp lệ, thì trả về 0.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu float.
+            Nếu value chứa giá trị không hợp lệ, thì trả về 0.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToDouble(System.Object,System.Nullable{System.Double})">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu double.
+            Trả về giá trị đã được chuyển đổi sang kiểu double.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            Giá trị này có thể là null.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="defaultValue">Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu double.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            Giá trị này có thể là null. 
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToDouble(System.Object,System.Double)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu double.
+            Trả về giá trị đã được chuyển đổi sang kiểu double.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="defaultValue">Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu double.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToDouble(System.Object)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu double.
+            Trả về giá trị đã được chuyển đổi sang kiểu double.
+            Nếu value chứa giá trị không hợp lệ, thì trả về 0.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu double.
+            Nếu value chứa giá trị không hợp lệ, thì trả về 0.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToDecimal(System.Object,System.Nullable{System.Decimal})">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu decimal.
+            Trả về giá trị đã được chuyển đổi sang kiểu decimal.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            Giá trị này có thể là null.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="defaultValue">Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu decimal.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            Giá trị này có thể là null. 
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToDecimal(System.Object,System.Decimal)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu decimal.
+            Trả về giá trị đã được chuyển đổi sang kiểu decimal.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="defaultValue">Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu decimal.
+            Nếu value chứa giá trị không hợp lệ, thì trả về giá trị defaultValue.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToDecimal(System.Object)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu decimal.
+            Trả về giá trị đã được chuyển đổi sang kiểu decimal.
+            Nếu value chứa giá trị không hợp lệ, thì trả về 0.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <returns>
+            Trả về giá trị đã được chuyển đổi sang kiểu decimal.
+            Nếu value chứa giá trị không hợp lệ, thì trả về 0.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToBool(System.Object,System.Nullable{System.Boolean})">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu bool.
+            Trả về giá trị đã chuyển đổi sang kiểu bool.
+            Nếu value chứa giá trị không hợp lệ, thì trả về defaultValue.
+            Giá trị này có thể là null.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="defaultValue">
+            Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.
+            Giá trị này có thể là null.
+            </param>
+            <returns>
+            Trả về giá trị đã chuyển đổi sang kiểu bool.
+            Nếu value chứa giá trị không hợp lệ, thì trả về defaultValue. 
+            Giá trị này có thể là null.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToBool(System.Object,System.Boolean)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu bool.
+            Trả về giá trị đã chuyển đổi sang kiểu bool.
+            Nếu value chứa giá trị không hợp lệ, thì trả về defaultValue.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="defaultValue">
+            Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.
+            </param>
+            <returns>
+            Trả về giá trị đã chuyển đổi sang kiểu bool.
+            Nếu value chứa giá trị không hợp lệ, thì trả về defaultValue. 
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToBool(System.Object)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu bool.
+            Trả về giá trị đã chuyển đổi sang kiểu bool.
+            Nếu value chứa giá trị không hợp lệ, thì trả về false.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <returns>
+            Trả về giá trị đã chuyển đổi sang kiểu bool.
+            Nếu value chứa giá trị không hợp lệ, thì trả về false. 
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToChar(System.Object,System.Nullable{System.Char})">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu char.
+            Trả về giá trị đã chuyển đổi sang kiểu char.
+            Nếu value chứa giá trị không hợp lệ, thì trả về defaultValue.
+            Giá trị này có thể là null.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="defaultValue">
+            Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.
+            Giá trị này có thể là null.
+            </param>
+            <returns>
+            Trả về giá trị đã chuyển đổi sang kiểu char.
+            Nếu value chứa giá trị không hợp lệ, thì trả về defaultValue. 
+            Giá trị này có thể là null.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToChar(System.Object,System.Char)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu char.
+            Trả về giá trị đã chuyển đổi sang kiểu char.
+            Nếu value chứa giá trị không hợp lệ, thì trả về defaultValue.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="defaultValue">Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.</param>
+            <returns>
+            Trả về giá trị đã chuyển đổi sang kiểu char.
+            Nếu value chứa giá trị không hợp lệ, thì trả về defaultValue. 
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToChar(System.Object)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu char.
+            Trả về giá trị đã chuyển đổi sang kiểu char.
+            Nếu value chứa giá trị không hợp lệ, thì trả về ' '.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <returns>
+            Trả về giá trị đã chuyển đổi sang kiểu char.
+            Nếu value chứa giá trị không hợp lệ, thì trả về ' '. 
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToSafetyString(System.Object,System.Boolean,System.String)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu string.
+            Trả về giá trị đã chuyển đổi sang kiểu string.
+            Nếu value chứa giá trị không hợp lệ, thì trả về defaultValue.
+            Giá trị này có thể là null.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="isTrim">
+            Cho phép cắt khoảng trắng ở 2 đầu nếu có.
+            True: có cắt khoảng trắng ở 2 đầu;
+            False: không cắt khoảng trắng ở 2 đầu.
+            </param>
+            <param name="defaultValue">
+            Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.
+            Giá trị này có thể là null.
+            </param>
+            <returns>
+            Trả về giá trị đã chuyển đổi sang kiểu string.
+            Nếu value chứa giá trị không hợp lệ, thì trả về defaultValue. 
+            Giá trị này có thể là null.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToSafetyString(System.Object,System.String)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu string.
+            Trả về giá trị đã chuyển đổi sang kiểu string.
+            Nếu value chứa giá trị không hợp lệ, thì trả về defaultValue.
+            Giá trị này có thể là null.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="defaultValue">
+            Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.
+            Giá trị này có thể là null.
+            </param>
+            <returns>
+            Trả về giá trị đã chuyển đổi sang kiểu string.
+            Nếu value chứa giá trị không hợp lệ, thì trả về defaultValue. 
+            Giá trị này có thể là null.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToSafetyString(System.Object,System.Boolean)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu string.
+            Trả về giá trị đã chuyển đổi sang kiểu string.
+            Nếu value chứa giá trị không hợp lệ, thì trả về Empty.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="isTrim">
+            Cho phép cắt khoảng trắng ở 2 đầu nếu có.
+            True: có cắt khoảng trắng ở 2 đầu;
+            False: không cắt khoảng trắng ở 2 đầu.
+            </param>
+            <returns>
+            Trả về giá trị đã chuyển đổi sang kiểu string.
+            Nếu value chứa giá trị không hợp lệ, thì trả về Empty. 
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToSafetyString(System.Object)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu string.
+            Trả về giá trị đã chuyển đổi sang kiểu string.
+            Nếu value chứa giá trị không hợp lệ, thì trả về Empty.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <returns>
+            Trả về giá trị đã chuyển đổi sang kiểu string.
+            Nếu value chứa giá trị không hợp lệ, thì trả về Empty. 
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToDateTime(System.Object,System.String,System.Nullable{System.DateTime})">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu DateTime.
+            Trả về giá trị đã chuyển đổi sang kiểu DateTime.
+            Nếu value chứa giá trị không hợp lệ, thì trả về defaultValue.
+            Giá trị này có thể là null.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="dateTimeFormat">
+            Định dạng của ngày giờ.
+            VD: dd/MM/yyyy; dd/MM/yyyy HH:mm:ss; MM/dd/yyyy; MM/dd/yyyy HH:mm:ss; HH:mm; hoặc các biến thể khác.
+            Với: dd-ngày; MM-tháng; yyyy-năm; HH-giờ; mm-phút; ss-giây.
+            Ngoài ra, có thể thay dấu (/) bằng dấu bất kỳ, ví dụ dấu (-).
+            </param>
+            <param name="defaultValue">
+            Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.
+            Giá trị này có thể là null.
+            </param>
+            <returns>
+            Trả về giá trị đã chuyển đổi sang kiểu DateTime.
+            Nếu value chứa giá trị không hợp lệ, thì trả về defaultValue. 
+            Giá trị này có thể là null.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToDateTime(System.Object,System.String,System.DateTime)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu DateTime.
+            Trả về giá trị đã chuyển đổi sang kiểu DateTime.
+            Nếu value chứa giá trị không hợp lệ, thì trả về defaultValue.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="dateTimeFormat">
+            Định dạng của ngày giờ.
+            VD: dd/MM/yyyy; dd/MM/yyyy HH:mm:ss; MM/dd/yyyy; MM/dd/yyyy HH:mm:ss; HH:mm; hoặc các biến thể khác.
+            Với: dd-ngày; MM-tháng; yyyy-năm; HH-giờ; mm-phút; ss-giây.
+            Ngoài ra, có thể thay dấu (/) bằng dấu bất kỳ, ví dụ dấu (-).
+            </param>
+            <param name="defaultValue">
+            Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.
+            </param>
+            <returns>
+            Trả về giá trị đã chuyển đổi sang kiểu DateTime.
+            Nếu value chứa giá trị không hợp lệ, thì trả về defaultValue. 
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToDateTime(System.Object,System.String)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu DateTime.
+            Trả về giá trị đã chuyển đổi sang kiểu DateTime.
+            Nếu value chứa giá trị không hợp lệ, thì trả về DateTime.MinValue.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="dateTimeFormat">
+            Định dạng của ngày giờ.
+            VD: dd/MM/yyyy; dd/MM/yyyy HH:mm:ss; MM/dd/yyyy; MM/dd/yyyy HH:mm:ss; HH:mm; hoặc các biến thể khác.
+            Với: dd-ngày; MM-tháng; yyyy-năm; HH-giờ; mm-phút; ss-giây.
+            Ngoài ra, có thể thay dấu (/) bằng dấu bất kỳ, ví dụ dấu (-).
+            </param>
+            <returns>
+            Trả về giá trị đã chuyển đổi sang kiểu DateTime.
+            Nếu value chứa giá trị không hợp lệ, thì trả về DateTime.MinValue. 
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToDateTime(System.Object,System.Nullable{System.DateTime})">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu DateTime.
+            Trả về giá trị đã chuyển đổi sang kiểu DateTime.
+            Nếu value chứa giá trị không hợp lệ, thì trả về defaultValue.
+            Giá trị này có thể là null.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="defaultValue">
+            Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.
+            Giá trị này có thể là null.
+            </param>
+            <returns>
+            Trả về giá trị đã chuyển đổi sang kiểu DateTime.
+            Nếu value chứa giá trị không hợp lệ, thì trả về defaultValue. 
+            Giá trị này có thể là null.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToDateTime(System.Object,System.DateTime)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu DateTime.
+            Trả về giá trị đã chuyển đổi sang kiểu DateTime.
+            Nếu value chứa giá trị không hợp lệ, thì trả về defaultValue.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="defaultValue">
+            Giá trị mặc định sẽ trả về nếu value chứa giá trị không hợp lệ.
+            </param>
+            <returns>
+            Trả về giá trị đã chuyển đổi sang kiểu DateTime.
+            Nếu value chứa giá trị không hợp lệ, thì trả về defaultValue. 
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToDateTime(System.Object)">
+            <summary>
+            Chuyển đổi giá trị value sang kiểu DateTime.
+            Trả về giá trị đã chuyển đổi sang kiểu DateTime.
+            Nếu value chứa giá trị không hợp lệ, thì trả về DateTime.MinValue.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <returns>
+            Trả về giá trị đã chuyển đổi sang kiểu DateTime.
+            Nếu value chứa giá trị không hợp lệ, thì trả về DateTime.MinValue. 
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.RoundToInt(System.Single)">
+            <summary>
+            Làm tròn một số có kiểu float, lấy 0 số thập phân, sau đó chuyển đổi sang kiểu int.
+            Trả về số sau khi đã làm tròn và chuyển sang kiểu int.
+            </summary>
+            <param name="value">Số cần làm tròn và chuyển đổi kiểu.</param>
+            <returns>Trả về số sau khi đã làm tròn và chuyển sang kiểu int.</returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.RoundToInt(System.Double)">
+            <summary>
+            Làm tròn một số có kiểu double, lấy 0 số thập phân, sau đó chuyển đổi sang kiểu int.
+            Trả về số sau khi đã làm tròn và chuyển sang kiểu int.
+            </summary>
+            <param name="value">Số cần làm tròn và chuyển đổi kiểu.</param>
+            <returns>Trả về số sau khi đã làm tròn và chuyển sang kiểu int.</returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.RoundToInt(System.Decimal)">
+            <summary>
+            Làm tròn một số có kiểu decimal, lấy 0 số thập phân, sau đó chuyển đổi sang kiểu int.
+            Trả về số sau khi đã làm tròn và chuyển sang kiểu int.
+            </summary>
+            <param name="value">Số cần làm tròn và chuyển đổi kiểu.</param>
+            <returns>Trả về số sau khi đã làm tròn và chuyển sang kiểu int.</returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.RoundToDouble(System.Double,System.Int32)">
+            <summary>
+            Làm tròn một số có kiểu double, có thể tùy chọn số thập phân cần lấy. 
+            Trả về số sau khi đã làm tròn và chuyển sang kiểu double.
+            </summary>
+            <param name="value">Số cần làm tròn và chuyển đổi kiểu.</param>
+            <param name="digits">Số thập phân cần làm tròn.</param>
+            <returns>Trả về số sau khi đã làm tròn và chuyển sang kiểu double.</returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.RoundToFloat(System.Single,System.Int32)">
+            <summary>
+            Làm tròn một số có kiểu float, có thể tùy chọn số thập phân cần lấy. 
+            Trả về số sau khi đã làm tròn và chuyển sang kiểu float.
+            </summary>
+            <param name="value">Số cần làm tròn và chuyển đổi kiểu.</param>
+            <param name="digits">Số thập phân cần làm tròn.</param>
+            <returns>Trả về số sau khi đã làm tròn và chuyển sang kiểu float.</returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.RoundToDecimal(System.Decimal,System.Int32)">
+            <summary>
+            Làm tròn một số có kiểu decimal, có thể tùy chọn số thập phân cần lấy. 
+            Trả về số sau khi đã làm tròn và chuyển sang kiểu decimal.
+            </summary>
+            <param name="value">Số cần làm tròn và chuyển đổi kiểu.</param>
+            <param name="digits">Số thập phân cần làm tròn.</param>
+            <returns>Trả về số sau khi đã làm tròn và chuyển sang kiểu decimal.</returns>
+        </member>
+        <member name="M:CodeUtility.ConvertUtility.ToEnumerable``1(``0)">
+            <summary> 
+            Chuyển đổi một phần tử đơn có kiểu <typeparamref name="T"/> thành một mảng có kiểu <typeparamref name="T"/> với <paramref name="value"/> là phần tử đầu tiên trong mảng.
+            </summary> 
+            <typeparam name="T">Kiểu của các phần tử trong mảng.</typeparam>
+            <param name="value">Giá trị của phần tử cần đặt vào mảng.</param>
+            <returns>Trả về mảng có 1 phần tử là <paramref name="value"/></returns>
+        </member>
+        <member name="T:CodeUtility.DialogUtility">
+            <summary>
+            Dialog Utility
+            </summary>
+        </member>
+        <member name="M:CodeUtility.DialogUtility.FolderDialog">
+            <summary>
+            Hiển thị một hộp thoại cho phép chọn thư mục
+            </summary>
+            <returns>
+            Trả về đường dẫn đến thư mục đã chọn
+            </returns>
+            <remarks>
+            Nếu không chọn thư mục, thì trả về chuỗi rỗng
+            </remarks>
+        </member>
+        <member name="M:CodeUtility.DialogUtility.FolderDialog(System.Boolean)">
+            <summary>
+            Hiển thị một hộp thoại cho phép chọn thư mục
+            </summary>
+            <param name="showNewFolderButton">
+            Thiết lập Ẩn/Hiện nút thêm thư mục mới. True: hiện; False: ẩn
+            </param>
+            <returns>
+            Trả về đường dẫn đến thư mục đã chọn
+            </returns>
+            <remarks>
+            Nếu không chọn thư mục, thì trả về chuỗi rỗng
+            </remarks>
+        </member>
+        <member name="M:CodeUtility.DialogUtility.FolderDialog(System.String,System.Boolean)">
+            <summary>
+            Hiển thị một hộp thoại cho phép chọn thư mục
+            </summary>
+            <param name="title">
+            Tiêu đề của hộp thoại
+            </param>
+            <param name="showNewFolderButton">
+            Thiết lập Ẩn/Hiện nút thêm thư mục mới. True: hiện; False: ẩn
+            </param>
+            <returns>
+            Trả về đường dẫn đến thư mục đã chọn
+            </returns>
+            <remarks>
+            Nếu không chọn thư mục, thì trả về chuỗi rỗng
+            </remarks>
+        </member>
+        <member name="M:CodeUtility.DialogUtility.FileDialog">
+            <summary>
+            Hiển thị một hộp thoại cho phép chọn file
+            </summary>
+            <returns>
+            Trả về đường dẫn đến file đã chọn
+            </returns>
+            <remarks>
+            Nếu không chọn file, thì trả về chuỗi rỗng
+            </remarks>
+        </member>
+        <member name="M:CodeUtility.DialogUtility.FileDialog(System.String)">
+            <summary>
+            Hiển thị một hộp thoại cho phép chọn file
+            </summary>
+            <param name="title">
+            Tiêu đề của hộp thoại
+            </param>
+            <returns>
+            Trả về đường dẫn đến file đã chọn
+            </returns>
+            <remarks>
+            Nếu không chọn file, thì trả về chuỗi rỗng
+            </remarks>
+        </member>
+        <member name="M:CodeUtility.DialogUtility.FileDialog(System.String,System.String)">
+            <summary>
+            Hiển thị một hộp thoại cho phép chọn file
+            </summary>
+            <param name="title">
+            Tiêu đề của hộp thoại
+            </param>
+            <param name="filter">
+            Thiết lập bộ lọc loại file
+            VD: "Text file|*.txt|Image file|*.jpg;*.jpeg;*.gif;*.png|All file|*.*"
+            </param>
+            <returns>
+            Trả về đường dẫn đến file đã chọn
+            </returns>
+            <remarks>
+            Nếu không chọn file, thì trả về chuỗi rỗng
+            </remarks>
+        </member>
+        <member name="M:CodeUtility.DialogUtility.FileSaveDialog">
+            <summary>
+            Hiển thị một hộp thoại cho phép lưu file
+            </summary>
+            <returns>
+            Trả về đường dẫn đến file đã chọn, hoặc tên file mới nhập
+            </returns>
+            <remarks>
+            Nếu không chọn file, thì trả về chuỗi rỗng
+            </remarks>
+        </member>
+        <member name="M:CodeUtility.DialogUtility.FileSaveDialog(System.String)">
+            <summary>
+            Hiển thị một hộp thoại cho phép lưu file
+            </summary>
+            <param name="title">
+            Tiêu đề của hộp thoại
+            </param>
+            <returns>
+            Trả về đường dẫn đến file đã chọn, hoặc tên file mới nhập
+            </returns>
+            <remarks>
+            Nếu không chọn file, thì trả về chuỗi rỗng
+            </remarks>
+        </member>
+        <member name="M:CodeUtility.DialogUtility.FileSaveDialog(System.String,System.String)">
+            <summary>
+            Hiển thị một hộp thoại cho phép lưu file
+            </summary>
+            <param name="title">
+            Tiêu đề của hộp thoại
+            </param>
+            <param name="filter">
+            Thiết lập bộ lọc loại file
+            VD: "Text file|*.txt|Image file|*.jpg;*.jpeg;*.gif;*.png|All file|*.*"
+            </param>
+            Thiết lập bộ lọc loại file sẽ lưu
+            VD: "Text file|*.txt|Image file|*.jpg;*.jpeg;*.gif;*.png|All file|*.*"
+            <returns>
+            Trả về đường dẫn đến file đã chọn, hoặc tên file mới nhập
+            </returns>
+            <remarks>
+            Nếu không chọn file, thì trả về chuỗi rỗng
+            </remarks>
+        </member>
+        <member name="M:CodeUtility.DialogUtility.Confirm(System.String,System.String)">
+            <summary>
+            Hiển thị một hộp thoại xác nhận, có 2 nút: Yes và No
+            </summary>
+            <param name="title">
+            Tiêu đề của hộp thoại
+            </param>
+            <param name="message">
+            Nội dung thông báo
+            </param>
+            <returns>
+            Nếu chọn Yes, thì trả về True; Ngược lại, thì trả về False
+            </returns>
+        </member>
+        <member name="M:CodeUtility.DialogUtility.Promt(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Hiển thị một hộp thoại yêu cầu người sử dụng nhập một chuỗi theo yêu cầu.
+            Trả về giá trị người sử dụng đã nhập. Nếu người dùng không nhập, trả về giá trị rỗng.
+            </summary>
+            <param name="title">
+            Tiêu đề của hộp thoại
+            </param>
+            <param name="message">
+            Nội dung thông báo
+            </param>
+            <param name="buttonText">Tiêu đề của nút xác nhận trong hộp thoại.</param>
+            <param name="width">Chiều dài của hộp thoại. Đơn vị tính là px.</param>
+            <param name="formPadding">Khoảng cách lề 4 cạnh của Form.</param>
+            <returns>Trả về giá trị người sử dụng đã nhập. Nếu người dùng không nhập, trả về giá trị rỗng.</returns>
+        </member>
+        <member name="T:CodeUtility.FitSizeType">
+            <summary>
+            FitSizeType enum.
+            </summary>
+        </member>
+        <member name="F:CodeUtility.FitSizeType.None">
+            <summary>
+            Mặc định
+            </summary>
+        </member>
+        <member name="F:CodeUtility.FitSizeType.Width">
+            <summary>
+            Cố định theo chiều dài
+            </summary>
+        </member>
+        <member name="F:CodeUtility.FitSizeType.Height">
+            <summary>
+            Cố định theo chiều cao
+            </summary>
+        </member>
+        <member name="T:CodeUtility.WaterMaskPositionType">
+            <summary>
+            WaterMaskPositionType enum
+            </summary>
+        </member>
+        <member name="F:CodeUtility.WaterMaskPositionType.None">
+            <summary>
+            Mặc định
+            </summary>
+        </member>
+        <member name="F:CodeUtility.WaterMaskPositionType.MiddleCenter">
+            <summary>
+            Đóng dấu giữa hình
+            </summary>
+        </member>
+        <member name="F:CodeUtility.WaterMaskPositionType.TopLeft">
+            <summary>
+            Đóng dấu tại góc trên - bên trái
+            </summary>
+        </member>
+        <member name="F:CodeUtility.WaterMaskPositionType.TopRight">
+            <summary>
+            Đóng dấu tại góc trên - bên phải
+            </summary>
+        </member>
+        <member name="F:CodeUtility.WaterMaskPositionType.BottomLeft">
+            <summary>
+            Đóng dấu tại góc dưới - bên trái
+            </summary>
+        </member>
+        <member name="F:CodeUtility.WaterMaskPositionType.BottomRight">
+            <summary>
+            Đóng dấu tại góc dưới - bên phải
+            </summary>
+        </member>
+        <member name="T:CodeUtility.StringCaseType">
+            <summary>
+            StringCaseType enum
+            </summary>
+        </member>
+        <member name="F:CodeUtility.StringCaseType.None">
+            <summary>
+            Mặc định
+            </summary>
+        </member>
+        <member name="F:CodeUtility.StringCaseType.UpperCase">
+            <summary>
+            In chữ hoa tất cả
+            </summary>
+        </member>
+        <member name="F:CodeUtility.StringCaseType.LowerCase">
+            <summary>
+            In chữ thường tất cả
+            </summary>
+        </member>
+        <member name="F:CodeUtility.StringCaseType.TitleCase">
+            <summary>
+            In hoa ký tự đầu trong từng chữ
+            </summary>
+        </member>
+        <member name="T:CodeUtility.StringExtractMode">
+            <summary>
+            StringExtractMode
+            </summary>
+        </member>
+        <member name="F:CodeUtility.StringExtractMode.Inner">
+            <summary>
+            Trích lọc chuỗi bên trong vị trí bắt đầu và vị trí kết thúc của chuỗi cần tìm kiếm.
+            </summary>
+        </member>
+        <member name="F:CodeUtility.StringExtractMode.Outer">
+            <summary>
+            Trích lọc chuỗi tại vị trí bắt đầu và vị trí kết thúc của chuỗi cần tìm kiếm. Bao gồm cả chuỗi bắt đầu và chuỗi kết thúc.
+            </summary>
+        </member>
+        <member name="T:CodeUtility.CharSetMode">
+            <summary>
+            CharSetMode
+            </summary>
+        </member>
+        <member name="F:CodeUtility.CharSetMode.None">
+            <summary>
+            None
+            </summary>
+        </member>
+        <member name="F:CodeUtility.CharSetMode.UTF_8">
+            <summary>
+            UTF-8
+            </summary>
+        </member>
+        <member name="F:CodeUtility.CharSetMode.ASCII">
+            <summary>
+            ASCII
+            </summary>
+        </member>
+        <member name="F:CodeUtility.CharSetMode.ANSI">
+            <summary>
+            ANSI
+            </summary>
+        </member>
+        <member name="F:CodeUtility.CharSetMode.ISO_8859_1">
+            <summary>
+            ISO-8859-1
+            </summary>
+        </member>
+        <member name="T:CodeUtility.SensitiveCaseMode">
+            <summary>
+            SensitiveCaseMode
+            </summary>
+        </member>
+        <member name="F:CodeUtility.SensitiveCaseMode.None">
+            <summary>
+            Không thiết lập
+            </summary>
+        </member>
+        <member name="F:CodeUtility.SensitiveCaseMode.SensitiveCase">
+            <summary>
+            Có phân biệt chữ hoa/thường
+            </summary>
+        </member>
+        <member name="F:CodeUtility.SensitiveCaseMode.IgnoreCase">
+            <summary>
+            Không phân biệt chữ hoa/thường
+            </summary>
+        </member>
+        <member name="T:CodeUtility.IndexOutOfRangeMode">
+            <summary>
+            IndexOutOfRangeMode enum
+            </summary>
+        </member>
+        <member name="F:CodeUtility.IndexOutOfRangeMode.ReturnDefaultValue">
+            <summary>
+            Trả về giá trị mặc định, tùy theo loại dữ liệu
+            </summary>
+        </member>
+        <member name="F:CodeUtility.IndexOutOfRangeMode.ThrowException">
+            <summary>
+            Ném lỗi ngoại lệ ra ngoài
+            </summary>
+        </member>
+        <member name="T:CodeUtility.UrlType">
+            <summary>
+            UrlType enum
+            </summary>
+        </member>
+        <member name="F:CodeUtility.UrlType.None">
+            <summary>
+            Mặc định
+            </summary>
+        </member>
+        <member name="F:CodeUtility.UrlType.ServerRootUrl">
+            <summary>
+            Kiểu Server Root Url. Ví dụ: ~/default.aspx
+            </summary>
+        </member>
+        <member name="F:CodeUtility.UrlType.ClientRootUrl">
+            <summary>
+            Kiểu Client Root Url. Ví dụ: /default.aspx
+            </summary>
+        </member>
+        <member name="F:CodeUtility.UrlType.ClientUrl">
+            <summary>
+            Kiểu client. Ví dụ: ../default.aspx
+            </summary>
+        </member>
+        <member name="F:CodeUtility.UrlType.AbsoluteUrl">
+            <summary>
+            Kiểu tên miền. Ví dụ: http://localhost/default.aspx
+            </summary>
+        </member>
+        <member name="F:CodeUtility.UrlType.AbsoluteSecureUrl">
+            <summary>
+            Kiểu tên miền có mã hóa. Ví dụ: https://localhost/default.aspx
+            </summary>
+        </member>
+        <member name="F:CodeUtility.UrlType.PhysicalUrl">
+            <summary>
+            Kiểu vật lý. Ví dụ: C:\Website\default.aspx
+            </summary>
+        </member>
+        <member name="T:CodeUtility.FileUtility">
+            <summary>
+            FileUtility
+            </summary>
+        </member>
+        <member name="M:CodeUtility.FileUtility.ReadFile(System.String,System.Exception@)">
+            <summary>
+            Đọc nội dung file. Có bắt lỗi ngoại lệ (nếu có).
+            </summary>
+            <param name="url">
+            Đường dẫn đến file cần đọc.
+            </param>
+            <param name="error">
+            Chứa lỗi ngoại lệ (nếu có) trong quá trình đọc file.
+            </param>
+            <returns>
+            Trả về nội dung của file đọc được.
+            </returns>
+            <remarks>
+            Nếu có lỗi ngoại lệ xảy ra, thì trả về String.Empty
+            </remarks>
+        </member>
+        <member name="M:CodeUtility.FileUtility.ReadFile(System.String)">
+            <summary>
+            Đọc nội dung file.
+            </summary>
+            <param name="url">
+            Đường dẫn đến file cần đọc.
+            </param>
+            <returns>
+            Trả về nội dung của file đọc được.
+            </returns>
+            <remarks>
+            Nếu có lỗi ngoại lệ xảy ra, thì trả về String.Empty
+            </remarks>
+        </member>
+        <member name="M:CodeUtility.FileUtility.WriteFile(System.String,System.String,System.Exception@)">
+            <summary>
+            Ghi nội dung vào file. Có bắt lỗi ngoại lệ (nếu có).
+            </summary>
+            <param name="url">Đường dẫn đến vị trí file sẽ được ghi.</param>
+            <param name="value">Nội dung sẽ ghi vào file.</param>
+            <param name="error">Chứa lỗi ngoại lệ (nếu có) trong quá trình ghi file.</param>
+            <returns>Nếu file được ghi thành công, trả về true; Ngược lại, trả về false.</returns>
+            <remarks>Nếu có lỗi ngoại lệ xảy ra, thì trả về false.</remarks>
+        </member>
+        <member name="M:CodeUtility.FileUtility.WriteFile(System.String,System.String)">
+            <summary>
+            Ghi nội dung vào file.
+            </summary>
+            <param name="url">Đường dẫn đến vị trí file sẽ được ghi.</param>
+            <param name="value">Nội dung sẽ ghi vào file.</param>
+            <returns>Nếu file được ghi thành công, trả về true; Ngược lại, trả về false.</returns>
+            <remarks>Nếu có lỗi ngoại lệ xảy ra, thì trả về false.</remarks>
+        </member>
+        <member name="M:CodeUtility.FileUtility.IsExists(System.String)">
+            <summary>
+            Kiểm tra sự tồn tại của một file tại url.
+            Nếu file có tồn tại: trả về true; ngược lại trả về false.
+            Nếu url là null, empty hoặc không hợp lệ, kết quả trả về là false.
+            </summary>
+            <param name="url">Đường dẫn đến file cần kiểm tra tồn tại.</param>
+            <returns>Nếu file có tồn tại: trả về true; ngược lại trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.FileUtility.GetSize(System.String)">
+            <summary>
+            Tính tổng dung lượng của một file tại url. Đơn vị tính là kilobyte.
+            Nếu url không tồn tại, trả về 0.
+            </summary>
+            <param name="url">Đường dẫn đến file cần tính dung lượng.</param>
+            <returns>Trả về tổng dung lượng của một file. Đơn vị tính là kilobyte.</returns>
+        </member>
+        <member name="M:CodeUtility.FileUtility.Move(System.String,System.String,System.Exception@)">
+            <summary>
+            Di chuyển một file từ url đến newUrl. Có bắt lỗi ngoại lệ (nếu có).
+            Nếu di chuyển thành công: trả về true; ngược lại trả về false.
+            Nếu có lỗi ngoại lệ xảy ra thì trả về false.
+            </summary>
+            <param name="url">Đường dẫn đến file cần chuyển đi. Ví dụ: C:\Images\abc.txt</param>
+            <param name="newUrl">Đường dẫn đến file cần chuyển đến. Ví dụ: C:\Document\Images\abc.txt</param>
+            <param name="error">Chứa lỗi ngoại lệ (nếu có) trong quá trình di chuyển file.</param>
+            <returns>Nếu di chuyển thành công: trả về true; ngược lại trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.FileUtility.Move(System.String,System.String)">
+            <summary>
+            Di chuyển một file từ url đến newUrl.
+            Nếu di chuyển thành công: trả về true; ngược lại trả về false.
+            Nếu có lỗi ngoại lệ xảy ra thì trả về false.
+            </summary>
+            <param name="url">Đường dẫn đến file cần chuyển đi. Ví dụ: C:\Images\abc.txt</param>
+            <param name="newUrl">Đường dẫn đến file cần chuyển đến. Ví dụ: C:\Document\Images\abc.txt</param>
+            <returns>Nếu di chuyển thành công: trả về true; ngược lại trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.FileUtility.Rename(System.String,System.String,System.Exception@)">
+            <summary>
+            Đổi tên một file sang tên mới. Có bắt lỗi ngoại lệ (nếu có).
+            Nếu đổi tên thành công: trả về true; ngược lại trả về false.
+            Nếu có lỗi ngoại lệ xảy ra thì trả về false.
+            </summary>
+            <param name="url">Đường dẫn đến file cần đổi tên. Ví dụ: C:\Images\abc.txt</param>
+            <param name="newName">Tên mới của file. Ví dụ: bcd.txt</param>
+            <param name="error">Chứa lỗi ngoại lệ (nếu có) trong quá trình đổi tên file.</param>
+            <returns>Nếu đổi tên thành công: trả về true; ngược lại trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.FileUtility.Rename(System.String,System.String)">
+            <summary>
+            Đổi tên một file sang tên mới.
+            Nếu đổi tên thành công: trả về true; ngược lại trả về false.
+            Nếu có lỗi ngoại lệ xảy ra thì trả về false.
+            </summary>
+            <param name="url">Đường dẫn đến file cần đổi tên. Ví dụ: C:\Images\abc.txt</param>
+            <param name="newName">Tên mới của file. Ví dụ: bcd.txt</param>
+            <returns>Nếu đổi tên thành công: trả về true; ngược lại trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.FileUtility.Delete(System.String,System.Exception@)">
+            <summary>
+            Xóa một file. Có bắt lỗi ngoại lệ (nếu có).
+            Nếu xóa thành công hoặc file không tồn tại: trả về true; ngược lại trả về false.
+            Nếu có lỗi ngoại lệ xảy ra thì trả về false.
+            </summary>
+            <param name="url">Đường dẫn đến file cần xóa. Ví dụ: C:\Images\abc.txt</param>
+            <param name="error">Chứa lỗi ngoại lệ (nếu có) trong quá trình xóa file.</param>
+            <returns>Nếu xóa thành công hoặc file không tồn tại: trả về true; ngược lại trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.FileUtility.Delete(System.String)">
+            <summary>
+            Xóa một file.
+            Nếu xóa thành công hoặc file không tồn tại: trả về true; ngược lại trả về false.
+            Nếu có lỗi ngoại lệ xảy ra thì trả về false.
+            </summary>
+            <param name="url">Đường dẫn đến file cần xóa. Ví dụ: C:\Images\abc.txt</param>
+            <returns>Nếu xóa thành công hoặc file không tồn tại: trả về true; ngược lại trả về false.</returns>
+        </member>
+        <member name="T:CodeUtility.FolderUtility">
+            <summary>
+            Folder Utility
+            </summary>
+        </member>
+        <member name="M:CodeUtility.FolderUtility.IsExists(System.String)">
+            <summary>
+            Kiểm tra sự tồn tại của một folder tại url.
+            Nếu folder có tồn tại: trả về true; ngược lại trả về false.
+            Nếu url là null, empty hoặc không hợp lệ, kết quả trả về là false.
+            </summary>
+            <param name="url">Đường dẫn đến folder cần kiểm tra tồn tại.</param>
+            <returns>Nếu folder có tồn tại: trả về true; ngược lại trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.FolderUtility.CreateFolder(System.String,System.Exception@)">
+            <summary>
+            Tạo folder tại url. Có bắt lỗi ngoại lệ (nếu có).
+            Nếu url có dạng đa cấp như: C:\User\Image\Demo. Thì các folder chưa có sẵn sẽ được tạo một cách lần lượt từ cấp lớn đến nhỏ. VD: User -> Image -> Demo
+            Nếu folder được tạo ra thành công hoặc đã có sẵn thì trả về true; ngược lại trả về false.
+            </summary>
+            <param name="url">Đường dẫn đến folder cần tạo mới.</param>
+            <param name="error">Chứa lỗi ngoại lệ (nếu có) trong quá trình tạo folder.</param>
+            <returns>Nếu folder được tạo ra thành công hoặc đã có sẵn thì trả về true; ngược lại trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.FolderUtility.CreateFolder(System.String)">
+            <summary>
+            Tạo folder tại url.
+            Nếu url có dạng đa cấp như: C:\User\Image\Demo. Thì các folder chưa có sẵn sẽ được tạo một cách lần lượt từ cấp lớn đến nhỏ. VD: User -> Image -> Demo
+            Nếu folder được tạo ra thành công hoặc đã có sẵn thì trả về true; ngược lại trả về false.
+            </summary>
+            <param name="url">Đường dẫn đến folder cần tạo mới.</param>
+            <returns>Nếu folder được tạo ra thành công hoặc đã có sẵn thì trả về true; ngược lại trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.FolderUtility.GetSize(System.String,System.IO.SearchOption)">
+            <summary>
+            Tính tổng dung lượng của một folder tại url. Đơn vị tính là kilobyte.
+            Nếu url không tồn tại, trả về 0.
+            </summary>
+            <param name="url">Đường dẫn đến folder cần tính dung lượng.</param>
+            <param name="searchOption">Có 2 tùy chọn: TopDirectoryOnly: chỉ xét trong folder hiện tại; AllDirectories: Bao gồm folder hiện tại và mọi folder con bên trong.</param>
+            <returns>Trả về tổng dung lượng của một folder. Đơn vị tính là kilobyte.</returns>
+        </member>
+        <member name="M:CodeUtility.FolderUtility.CountFiles(System.String,System.IO.SearchOption)">
+            <summary>
+            Đếm số lượng file bên trong folder tại url.
+            Nếu folder tại url không tồn tại, trả về 0.
+            </summary>
+            <param name="url">Đường dẫn đến folder cần đếm số lượng file.</param>
+            <param name="searchOption">Có 2 tùy chọn: TopDirectoryOnly: chỉ xét trong folder hiện tại; AllDirectories: Bao gồm folder hiện tại và mọi folder con bên trong.</param>
+            <returns>Trả về số lượng file bên trong folder tại url.</returns>
+        </member>
+        <member name="M:CodeUtility.FolderUtility.CountFolders(System.String,System.IO.SearchOption)">
+            <summary>
+            Đếm số lượng folder con bên trong folder tại url. 
+            Nếu folder tại url không tồn tại, trả về 0.
+            </summary>
+            <param name="url">Đường dẫn đến folder cần đếm số lượng folder con.</param>
+            <param name="searchOption">Có 2 tùy chọn: TopDirectoryOnly: chỉ xét trong folder hiện tại; AllDirectories: Bao gồm folder hiện tại và mọi folder con bên trong.</param>
+            <returns>Trả về số lượng folder con bên trong folder tại url.</returns>
+        </member>
+        <member name="M:CodeUtility.FolderUtility.CountItems(System.String,System.IO.SearchOption)">
+            <summary>
+            Đếm số lượng file và folder con bên trong folder tại url. 
+            Nếu folder tại url không tồn tại, trả về 0.
+            </summary>
+            <param name="url">Đường dẫn đến folder cần đếm số lượng file + folder.</param>
+            <param name="searchOption">Có 2 tùy chọn: TopDirectoryOnly: chỉ xét trong folder hiện tại; AllDirectories: Bao gồm folder hiện tại và mọi folder con bên trong.</param>
+            <returns>Trả về số lượng file + folder con bên trong folder tại url.</returns>
+        </member>
+        <member name="M:CodeUtility.FolderUtility.Move(System.String,System.String,System.Exception@)">
+            <summary>
+            Di chuyển một folder từ url đến newUrl. Có bắt lỗi ngoại lệ (nếu có).
+            Nếu di chuyển thành công: trả về true; ngược lại trả về false.
+            Nếu có lỗi ngoại lệ xảy ra thì trả về false.
+            </summary>
+            <param name="url">Đường dẫn đến folder cần chuyển đi. Ví dụ: C:\Images</param>
+            <param name="newUrl">Đường dẫn đến folder cần chuyển đến. Ví dụ: C:\Document\Images</param>
+            <param name="error">Chứa lỗi ngoại lệ (nếu có) trong quá trình di chuyển folder.</param>
+            <returns>Nếu di chuyển thành công: trả về true; ngược lại trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.FolderUtility.Move(System.String,System.String)">
+            <summary>
+            Di chuyển một folder từ url đến newUrl.
+            Nếu di chuyển thành công: trả về true; ngược lại trả về false.
+            Nếu có lỗi ngoại lệ xảy ra thì trả về false.
+            </summary>
+            <param name="url">Đường dẫn đến folder cần chuyển đi. Ví dụ: C:\Images</param>
+            <param name="newUrl">Đường dẫn đến folder cần chuyển đến. Ví dụ: C:\Document\Images</param>
+            <returns>Nếu di chuyển thành công: trả về true; ngược lại trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.FolderUtility.Rename(System.String,System.String,System.Exception@)">
+            <summary>
+            Đổi tên một folder sang tên mới. Có bắt lỗi ngoại lệ (nếu có).
+            Nếu đổi tên thành công: trả về true; ngược lại trả về false.
+            Nếu có lỗi ngoại lệ xảy ra thì trả về false.
+            </summary>
+            <param name="url">Đường dẫn đến folder cần đổi tên.</param>
+            <param name="newName">Tên mới của folder.</param>
+            <param name="error">Chứa lỗi ngoại lệ (nếu có) trong quá trình đổi tên folder.</param>
+            <returns>Nếu đổi tên thành công: trả về true; ngược lại trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.FolderUtility.Rename(System.String,System.String)">
+            <summary>
+            Đổi tên một folder sang tên mới.
+            Nếu đổi tên thành công: trả về true; ngược lại trả về false.
+            Nếu có lỗi ngoại lệ xảy ra thì trả về false.
+            </summary>
+            <param name="url">Đường dẫn đến folder cần đổi tên.</param>
+            <param name="newName">Tên mới của folder.</param>
+            <returns>Nếu đổi tên thành công: trả về true; ngược lại trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.FolderUtility.Delete(System.String,System.Exception@)">
+            <summary>
+            Xóa một folder. Có bắt lỗi ngoại lệ (nếu có).
+            Nếu xóa thành công hoặc folder không tồn tại: trả về true; ngược lại trả về false.
+            Nếu có lỗi ngoại lệ xảy ra thì trả về false.
+            </summary>
+            <param name="url">Đường dẫn đến folder cần xóa.</param>
+            <param name="error">Chứa lỗi ngoại lệ (nếu có) trong quá trình xóa folder.</param>
+            <returns>Nếu xóa thành công hoặc folder không tồn tại: trả về true; ngược lại trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.FolderUtility.Delete(System.String)">
+            <summary>
+            Xóa một folder.
+            Nếu xóa thành công hoặc folder không tồn tại: trả về true; ngược lại trả về false.
+            Nếu có lỗi ngoại lệ xảy ra thì trả về false.
+            </summary>
+            <param name="url">Đường dẫn đến folder cần xóa.</param>
+            <returns>Nếu xóa thành công hoặc folder không tồn tại: trả về true; ngược lại trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.FolderUtility.Empty(System.String,System.Exception@)">
+            <summary>
+            Xóa hết file và folder con bên trong folder tại url. Có bắt lỗi ngoại lệ (nếu có).
+            Nếu xóa hết thành công: trả về true; ngược lại trả về false.
+            Nếu có lỗi ngoại lệ xảy ra thì trả về false.
+            </summary>
+            <param name="url">Đường dẫn đến folder cần xóa hết file và folder con bên trong.</param>
+            <param name="error">Chứa lỗi ngoại lệ (nếu có) trong quá trình xóa hết.</param>
+            <returns>Nếu xóa thành công: trả về true; ngược lại trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.FolderUtility.Empty(System.String)">
+            <summary>
+            Xóa hết file và folder con bên trong folder tại url. Có bắt lỗi ngoại lệ (nếu có).
+            Nếu xóa hết thành công: trả về true; ngược lại trả về false.
+            Nếu có lỗi ngoại lệ xảy ra thì trả về false.
+            </summary>
+            <param name="url">Đường dẫn đến folder cần xóa hết file và folder con bên trong.</param>
+            <returns>Nếu xóa thành công: trả về true; ngược lại trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.FolderUtility.SearchFolders(System.String,System.String,System.IO.SearchOption)">
+            <summary>
+            Tìm kiếm danh sách folder con bên trong folder tại url.
+            Trả về danh sách folder con tìm được bên trong folder tại url
+            </summary>
+            <param name="url">Đường dẫn đến folder cần tìm kiếm folder con bên trong.</param>
+            <param name="searchPattern">
+            Mẫu để tìm kiếm. 
+            VD1:  image* : tìm tất cả các folder con có tên bắt đầu là image. 
+            VD2: *image  : tìm tất cả các folder con có tên kết thúc là image
+            VD3: *image* : tìm tất cả các folder con có tên chứa chữ image
+            VD4: *       : tìm tất cả các folder con
+            </param>
+            <param name="searchOption">Có 2 tùy chọn: TopDirectoryOnly: chỉ xét trong folder hiện tại; AllDirectories: Bao gồm folder hiện tại và mọi folder con bên trong.</param>
+            <returns>Trả về danh sách folder con tìm được bên trong folder tại url</returns>
+        </member>
+        <member name="M:CodeUtility.FolderUtility.SearchFiles(System.String,System.String,System.IO.SearchOption)">
+            <summary>
+            Tìm kiếm danh sách file bên trong folder tại url.
+            Trả về danh sách file tìm được bên trong folder tại url
+            </summary>
+            <param name="url">Đường dẫn đến folder cần tìm kiếm file bên trong.</param>
+            <param name="searchPattern">
+            Mẫu để tìm kiếm. 
+            VD1:  image* : tìm tất cả các file có tên bắt đầu là image. 
+            VD2: *image  : tìm tất cả các file có tên kết thúc là image
+            VD3: *image* : tìm tất cả các file có tên chứa chữ image
+            VD4: *.jpg   : tìm tất cả các file có phần mở rộng là .jpg
+            VD5: image.* : tìm tất cả các file có tên là image với phần mở rộng là bất kỳ
+            VD6: *       : tìm tất cả các file
+            </param>
+            <param name="searchOption">Có 2 tùy chọn: TopDirectoryOnly: chỉ xét trong folder hiện tại; AllDirectories: Bao gồm folder hiện tại và mọi folder con bên trong.</param>
+            <returns>Trả về danh sách file tìm được bên trong folder tại url</returns>
+        </member>
+        <member name="M:CodeUtility.FolderUtility.SearchFolderUrls(System.String,System.String,System.IO.SearchOption)">
+            <summary>
+            Tìm kiếm danh sách tên folder con bên trong folder tại url.
+            Trả về danh sách tên folder con tìm được bên trong folder tại url
+            </summary>
+            <param name="url">Đường dẫn đến folder cần tìm kiếm folder con bên trong.</param>
+            <param name="searchPattern">
+            Mẫu để tìm kiếm. 
+            VD1:  image* : tìm tất cả các folder con có tên bắt đầu là image. 
+            VD2: *image  : tìm tất cả các folder con có tên kết thúc là image
+            VD3: *image* : tìm tất cả các folder con có tên chứa chữ image
+            VD4: *       : tìm tất cả các folder con
+            </param>
+            <param name="searchOption">Có 2 tùy chọn: TopDirectoryOnly: chỉ xét trong folder hiện tại; AllDirectories: Bao gồm folder hiện tại và mọi folder con bên trong.</param>
+            <returns>Trả về danh sách tên folder con tìm được bên trong folder tại url</returns>
+        </member>
+        <member name="M:CodeUtility.FolderUtility.SearchFileUrls(System.String,System.String,System.IO.SearchOption)">
+            <summary>
+            Tìm kiếm danh sách tên file bên trong folder tại url.
+            Trả về danh sách tên file tìm được bên trong folder tại url
+            </summary>
+            <param name="url">Đường dẫn đến folder cần tìm kiếm file bên trong.</param>
+            <param name="searchPattern">
+            Mẫu để tìm kiếm. 
+            VD1:  image* : tìm tất cả các file có tên bắt đầu là image. 
+            VD2: *image  : tìm tất cả các file có tên kết thúc là image
+            VD3: *image* : tìm tất cả các file có tên chứa chữ image
+            VD4: *.jpg   : tìm tất cả các file có phần mở rộng là .jpg
+            VD5: image.* : tìm tất cả các file có tên là image với phần mở rộng là bất kỳ
+            VD6: *       : tìm tất cả các file
+            </param>
+            <param name="searchOption">Có 2 tùy chọn: TopDirectoryOnly: chỉ xét trong folder hiện tại; AllDirectories: Bao gồm folder hiện tại và mọi folder con bên trong.</param>
+            <returns>Trả về danh sách tên file tìm được bên trong folder tại url</returns>
+        </member>
+        <member name="M:CodeUtility.FolderUtility.ListFolderInfos(System.String,System.IO.SearchOption)">
+            <summary>
+            Liệt kê danh sách folder con bên trong folder tại url.
+            Trả về danh sách folder con bên trong folder tại url
+            </summary>
+            <param name="url">Đường dẫn đến folder cần liệt kê folder con bên trong.</param>
+            <param name="searchOption">Có 2 tùy chọn: TopDirectoryOnly: chỉ xét trong folder hiện tại; AllDirectories: Bao gồm folder hiện tại và mọi folder con bên trong.</param>
+            <returns>Trả về danh sách folder con bên trong folder tại url</returns>
+        </member>
+        <member name="M:CodeUtility.FolderUtility.ListFileInfos(System.String,System.IO.SearchOption)">
+            <summary>
+            Liệt kê danh sách file bên trong folder tại url.
+            Trả về danh sách file bên trong folder tại url
+            </summary>
+            <param name="url">Đường dẫn đến folder cần liệt kê file bên trong.</param>
+            <param name="searchOption">Có 2 tùy chọn: TopDirectoryOnly: chỉ xét trong folder hiện tại; AllDirectories: Bao gồm folder hiện tại và mọi file bên trong.</param>
+            <returns>Trả về danh sách file bên trong folder tại url</returns>
+        </member>
+        <member name="M:CodeUtility.FolderUtility.ListFolderUrls(System.String,System.IO.SearchOption)">
+            <summary>
+            Liệt kê danh sách tên folder con bên trong folder tại url.
+            Trả về danh sách tên folder con tìm được bên trong folder tại url
+            </summary>
+            <param name="url">Đường dẫn đến folder cần tìm kiếm folder con bên trong.</param>
+            <param name="searchOption">Có 2 tùy chọn: TopDirectoryOnly: chỉ xét trong folder hiện tại; AllDirectories: Bao gồm folder hiện tại và mọi folder con bên trong.</param>
+            <returns>Trả về danh sách tên folder con bên trong folder tại url</returns>
+        </member>
+        <member name="M:CodeUtility.FolderUtility.ListFileUrls(System.String,System.IO.SearchOption)">
+            <summary>
+            Liệt kê danh sách tên file bên trong folder tại url.
+            Trả về danh sách tên file tìm được bên trong folder tại url
+            </summary>
+            <param name="url">Đường dẫn đến folder cần tìm kiếm file bên trong.</param>
+            <param name="searchOption">Có 2 tùy chọn: TopDirectoryOnly: chỉ xét trong folder hiện tại; AllDirectories: Bao gồm folder hiện tại và mọi file bên trong.</param>
+            <returns>Trả về danh sách tên file bên trong folder tại url</returns>
+        </member>
+        <member name="M:CodeUtility.FolderUtility.GetAllDrivers(System.Exception@)">
+            <summary>
+            Liệt kê danh sách tên các ổ đĩa trong máy tính. Có bắt lỗi ngoại lệ (nếu có).
+            Trả về danh sách tên các ổ đĩa trong máy tính.
+            </summary>
+            <param name="error">Chứa lỗi ngoại lệ (nếu có) trong quá trình liệt kê tên các ổ đĩa.</param>
+            <returns>Trả về danh sách tên các ổ đĩa trong máy tính.</returns>
+        </member>
+        <member name="M:CodeUtility.FolderUtility.GetAllDrivers">
+            <summary>
+            Liệt kê danh sách tên các ổ đĩa trong máy tính.
+            Trả về danh sách tên các ổ đĩa trong máy tính.
+            </summary>
+            <returns>Trả về danh sách tên các ổ đĩa trong máy tính.</returns>
+        </member>
+        <member name="M:CodeUtility.FolderUtility.GetAllDriverUrls(System.Exception@)">
+            <summary>
+            Liệt kê danh sách tên các ổ đĩa trong máy tính. Có bắt lỗi ngoại lệ (nếu có).
+            Trả về danh sách tên các ổ đĩa trong máy tính.
+            </summary>
+            <param name="error">Chứa lỗi ngoại lệ (nếu có) trong quá trình liệt kê tên các ổ đĩa.</param>
+            <returns>Trả về danh sách tên các ổ đĩa trong máy tính.</returns>
+        </member>
+        <member name="M:CodeUtility.FolderUtility.GetAllDriverUrls">
+            <summary>
+            Liệt kê danh sách tên các ổ đĩa trong máy tính.
+            Trả về danh sách tên các ổ đĩa trong máy tính.
+            </summary>
+            <returns>Trả về danh sách tên các ổ đĩa trong máy tính.</returns>
+        </member>
+        <member name="T:CodeUtility.ImageUtility">
+            <summary>
+            Image Utility
+            </summary>
+        </member>
+        <member name="M:CodeUtility.ImageUtility.GetEncoderInfo(System.String)">
+            <summary>
+            Tìm Image Code theo tên.
+            Trả về ImageCode tìm thấy. Nếu không tìm thấy thì trả về null.
+            </summary>
+            <param name="mimeType">Loại file. Ví dụ: image/jpeg hoặc image/gif hoặc image/png.</param>
+            <returns>Trả về ImageCode tìm thấy. Nếu không tìm thấy thì trả về null.</returns>
+        </member>
+        <member name="M:CodeUtility.ImageUtility.GetWaterMaskPosition(CodeUtility.WaterMaskPositionType,System.Drawing.Size,System.Drawing.Size,System.Int32,System.Drawing.Point@)">
+            <summary>
+            Tính toán tọa độ đặt WaterMask
+            </summary>
+            <param name="waterMaskPositionType">Kiểu tọa độ đặt WaterMask.</param>
+            <param name="sourceSize">Kích cỡ ảnh ban đầu.</param>
+            <param name="waterMaskSize">Chiều dài ảnh làm WaterMask.</param>
+            <param name="waterMaskMargin">Khoảng cách lề 4 cạnh của WaterMask so với biên của ảnh ban đầu.</param>
+            <param name="waterMaskPoint">Tạo độ của WaterMask.</param>
+        </member>
+        <member name="M:CodeUtility.ImageUtility.GetImageAttributes(System.Int32)">
+            <summary>
+            Trả về đối tượng ImageAttributes có hỗ trợ độ trong suốt
+            </summary>
+            <param name="opacityPecent">Độ trong suốt của hình. Có giá trị nằm trong khoảng 0 - 100</param>
+            <returns>Trả về đối tượng ImageAttributes có hỗ trợ độ trong suốt</returns>
+        </member>
+        <member name="M:CodeUtility.ImageUtility.CreateBitmapImageFromText(System.String,System.String,System.Drawing.FontStyle,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Int32,System.Int32)">
+            <summary>
+            Tạo một hình Bitmap sử dụng văn bản và các tham số hình.
+            </summary>
+            <param name="text">Văn bản cần hiển thị.</param>
+            <param name="fontUrl">Đường dẫn đến font. Cần sử dụng Font thuộc họ Unicode.</param>
+            <param name="fontStyle">Kiểu Font: , bình thường, in đậm, in nghiêng hoặc gạch chân.</param>
+            <param name="textColor1">Màu chữ số 1. Dùng để hòa trộn với Màu chữ số 2.</param>
+            <param name="textColor2">Màu chữ số 2. Dùng để hòa trộn với Màu chữ số 1.</param>
+            <param name="backgroundColor">Màu nền của ảnh.</param>
+            <param name="borderColor">Màu khung.</param>
+            <param name="borderSize">Cỡ khung. Đơn vị là px</param>
+            <param name="gradientAngle">Góc hòa trộn màu sử dụng Gradient</param>
+            <returns></returns>
+        </member>
+        <member name="M:CodeUtility.ImageUtility.CreateEmptyBitmap(System.String,System.Drawing.Font)">
+            <summary>
+            Tạo một ảnh Bimap rỗng, có chiều dài x chiều cao phù hợp với nội dung và font chữ.
+            </summary>
+            <param name="text">Chuỗi cần tạo hình động.</param>
+            <param name="font">Font chữ cho chuỗi cần tạo hình động.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CodeUtility.ImageUtility.CreatePrivateFont(System.String,System.Int32,System.Drawing.FontStyle)">
+            <summary>
+            Tạo một Font chữ cá nhân từ một file font chữ bất kỳ.
+            Trả về font chữ đúng với các cấu hình.
+            </summary>
+            <param name="url">Đường dẫn đến file font. Ví dụ: ../../UVNDUNGDAN.TTF</param>
+            <param name="fontSize">Cỡ font. Nằm trong khoảng 1 - 1000</param>
+            <param name="fontStyle">Kiểu chữ. Regular: bình thường; Bold: in đậm; Italic: nghiêng; Underline: gạch chân.</param>
+            <returns>Trả về font chữ đúng với các cấu hình.</returns>
+        </member>
+        <member name="M:CodeUtility.ImageUtility.LoadImage(System.String,System.Exception@)">
+            <summary>
+            Load ảnh Bitmap từ Url. Có bắt lỗi ngoại lệ xảy ra trong quá trình xử lý nếu có.
+            Trả về ảnh có dạng Bitmap.
+            </summary>
+            <param name="url">Vị trí dẫn đến file ảnh.</param>
+            <param name="error">Chứa lỗi ngoại lệ (nếu có) trong quá trình xử lý.</param>
+            <returns>Trả về ảnh có dạng Bitmap.</returns>
+        </member>
+        <member name="M:CodeUtility.ImageUtility.LoadImage(System.String)">
+            <summary>
+            Load ảnh Bitmap từ Url.
+            Trả về ảnh có dạng Bitmap.
+            </summary>
+            <param name="url">Vị trí dẫn đến file ảnh.</param>
+            <returns>Trả về ảnh có dạng Bitmap.</returns>
+        </member>
+        <member name="M:CodeUtility.ImageUtility.ResizeImage(System.Drawing.Bitmap,System.Int32,CodeUtility.FitSizeType)">
+            <summary>
+            Thay đổi kích cỡ của ảnh.
+            </summary>
+            <param name="sourceImage">Ảnh cần thay đổi kích cỡ.</param>
+            <param name="size">Kích cỡ mới.</param>
+            <param name="fitSizeType">
+            Độ ưu tiên khi tỷ lệ của chiều dài mới và chiều cao mới không tương đồng với nhau.
+            </param>
+            <returns>Trả về ảnh với kích cỡ mới.</returns>
+        </member>
+        <member name="M:CodeUtility.ImageUtility.SaveImage(System.Drawing.Bitmap,System.Single,System.Int32,System.String,System.Exception@)">
+            <summary>
+            Lưu ảnh thành file. Có bắt lỗi ngoại lệ xảy ra trong quá trình xử lý nếu có.
+            Có thể tùy chọn loại ảnh (jpg|png|gif|v.v..) theo url, tùy chọn resolution và tùy chọn chất lượng ảnh.
+            </summary>
+            <param name="sourceImage">Ảnh cần lưu thành file.</param>
+            <param name="resolution">Resolution (dbi) của ảnh muốn lưu.</param>
+            <param name="quality">Chất lượng của ảnh sau khi lưu.</param>
+            <param name="url">Vị trí sẽ lưu ảnh.
+            Vd: C:\Images\abc.jpeg
+            </param>
+            <param name="error">Chứa lỗi ngoại lệ (nếu có) trong quá trình xử lý.</param>
+            <returns>Kết quả của việc lưu hình.
+            True: lưu hình thành công; False: lưu hình không thành công.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ImageUtility.SaveImage(System.Drawing.Bitmap,System.Single,System.Int32,System.String)">
+            <summary>
+            Lưu ảnh thành file.
+            Có thể tùy chọn loại ảnh (jpg|png|gif|v.v..) theo url, tùy chọn resolution và tùy chọn chất lượng ảnh.
+            </summary>
+            <param name="sourceImage">Ảnh cần lưu thành file.</param>
+            <param name="resolution">Resolution (dbi) của ảnh muốn lưu.</param>
+            <param name="quality">Chất lượng của ảnh sau khi lưu.</param>
+            <param name="url">Vị trí sẽ lưu ảnh.
+            Vd: C:\Images\abc.jpeg
+            </param>
+            <returns>Kết quả của việc lưu hình.
+            True: lưu hình thành công; False: lưu hình không thành công.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.ImageUtility.RotateImage(System.Drawing.Bitmap,System.Drawing.RotateFlipType)">
+            <summary>
+            Xoay ảnh một góc tùy ý theo RotateFlipType. Trả về ảnh sau khi đã xoay.
+            </summary>
+            <param name="sourceImage">Ảnh cần xoay.</param>
+            <param name="rotateFlipType">Góc xoay.</param>
+            <returns>Trả về ảnh sau khi đã xoay.</returns>
+        </member>
+        <member name="M:CodeUtility.ImageUtility.RotateImageToLeft(System.Drawing.Bitmap)">
+            <summary>
+            Xoay ảnh sang trái một góc 90 độ. Trả về ảnh sau khi đã xoay.
+            </summary>
+            <param name="sourceImage">Ảnh cần xoay.</param>
+            <returns>Trả về ảnh sau khi đã xoay.</returns>
+        </member>
+        <member name="M:CodeUtility.ImageUtility.RotateImageToRight(System.Drawing.Bitmap)">
+            <summary>
+            Xoay ảnh sang phải một góc 90 độ. Trả về ảnh sau khi đã xoay.
+            </summary>
+            <param name="sourceImage">Ảnh cần xoay.</param>
+            <returns>Trả về ảnh sau khi đã xoay.</returns>
+        </member>
+        <member name="M:CodeUtility.ImageUtility.WaterMaskWithImage(System.Drawing.Bitmap,System.Drawing.Bitmap,System.Int32,System.Int32,CodeUtility.WaterMaskPositionType,System.Int32)">
+            <summary>
+            Đóng dấu lên ảnh sử dụng hình làm WaterMask.
+            Trả về ảnh đã được đóng dấu sử dụng văn bản làm WaterMask.
+            </summary>
+            <param name="sourceImage">Ảnh ban đầu.</param>
+            <param name="waterMaskImage">Ảnh dùng làm WaterMask.</param>
+            <param name="waterMaskOpacityPecent">Độ rõ của WaterMask. Đơn vị tính là %. Tối thiểu : 0; Tối đa 100</param>
+            <param name="waterMaskRatio">Tỉ lệ kích cỡ của WaterMask so với ảnh ban đầu. Đơn vị tính là %. Tối thiểu : 0; Tối đa 100</param>
+            <param name="waterMaskPositionType">Vị trí đặt WaterMask trên ảnh ban đầu.</param>
+            <param name="waterMaskMargin">Khoảng cách lề 4 cạnh của WaterMask so với biên của ảnh ban đầu. Không áp dụng khi thiết lập WaterMaskPositionType = MiddleCenter</param>
+            <returns>Trả về ảnh đã được đóng dấu sử dụng WaterMask.</returns>
+        </member>
+        <member name="M:CodeUtility.ImageUtility.WaterMaskWithString(System.Drawing.Bitmap,System.String,System.String,System.Int32,System.Int32,CodeUtility.WaterMaskPositionType,System.Int32,System.Drawing.FontStyle,System.Drawing.Color,System.Drawing.Color,System.Int32,System.Drawing.Color,System.Drawing.Color,System.Int32)">
+            <summary>
+            Đóng dấu lên ảnh sử dụng văn bản làm WaterMask.
+            Trả về ảnh đã được đóng dấu sử dụng văn bản làm WaterMask.
+            </summary>
+            <param name="sourceImage">Ảnh ban đầu.</param>
+            <param name="text">Văn bản dùng làm WaterMask</param>
+            <param name="fontUrl">Đường dẫn đến font của văn bản dùng làm WaterMask</param>
+            <param name="waterMaskOpacityPecent">Độ rõ của WaterMask. Đơn vị tính là %. Tối thiểu : 0; Tối đa 100</param>
+            <param name="waterMaskRatio">Tỉ lệ kích cỡ của WaterMask so với ảnh ban đầu. Đơn vị tính là %. Tối thiểu : 0; Tối đa 100</param>
+            <param name="waterMaskPositionType">Vị trí đặt WaterMask trên ảnh ban đầu.</param>
+            <param name="waterMaskMargin">Khoảng cách lề 4 cạnh của WaterMask so với biên của ảnh ban đầu. Không áp dụng khi thiết lập WaterMaskPositionType = MiddleCenter</param>
+            <param name="fontStyle">Kiểu Font. Regular: bình thường; Bold: in đậm; Italic: in nghiêng; Underline: gạch chân; Strikeout: gạch ngang.</param>
+            <param name="textColor1">Màu chữ 01.</param>
+            <param name="textColor2">Màu chữ 02.</param>
+            <param name="gradientAngle">Góc hòa trộn màu chữ 01 và màu chữ 02. Giá trị nằm trong khoảng 0 - 360.</param>
+            <param name="backgroundColor">Màu nền</param>
+            <param name="borderColor">Màu đường viền bo quanh chữ.</param>
+            <param name="borderSize">Cỡ đường viền bo quanh chữ.</param>
+            <returns>Trả về ảnh đã được đóng dấu sử dụng văn bản làm WaterMask.</returns>
+        </member>
+        <member name="M:CodeUtility.ImageUtility.CropImage(System.Drawing.Bitmap,System.Drawing.Rectangle)">
+            <summary>
+            Cắt cúp ảnh tại 1 vùng được chọn.
+            Trả về ảnh mới được tạo ra từ vùng chọn cắt cúp.
+            </summary>
+            <param name="sourceImage">Ảnh cần được cắt cúp.</param>
+            <param name="rectangle">Khu vực cần được cắt cúp.</param>
+            <returns>Trả về ảnh mới được tạo ra từ vùng chọn cắt cúp.</returns>
+        </member>
+        <member name="T:CodeUtility.MailUtility">
+            <summary>
+            MailUtility
+            </summary>
+        </member>
+        <member name="M:CodeUtility.MailUtility.#ctor">
+            <summary>
+            Khởi tạo đối tượng.
+            </summary>
+        </member>
+        <member name="M:CodeUtility.MailUtility.#ctor(System.String,System.String)">
+            <summary>
+            Khởi tạo đối tượng với địa chỉ gửi và mật khẩu gửi.
+            </summary>
+            <param name="from">Địa chỉ gửi. VD: nguoigui@gmail.com.</param>
+            <param name="password">Mật khẩu của địa chỉ gửi.</param>
+        </member>
+        <member name="P:CodeUtility.MailUtility.From">
+            <summary>
+            Trả về hoặc thiết lập địa chỉ gửi.
+            VD: nguoigui@gmail.com
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MailUtility.Password">
+            <summary>
+            Trả về hoặc thiết lập mật khẩu gửi
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MailUtility.Host">
+            <summary>
+            Trả về hoặc thiết lập địa chỉ máy chủ gửi.
+            VD: smpt.gmail.com
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MailUtility.Port">
+            <summary>
+            Trả về hoặc thiết lập cổng dùng để gửi.
+            Mặc định cổng của gmail là: 587
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MailUtility.EnableSSL">
+            <summary>
+            Trả về hoặc thiết lập cơ chế bảo mật SSL.
+            Thiết lập là true nếu dùng gmail để gửi
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MailUtility.To">
+            <summary>
+            Trả về hoặc thiết lập địa chỉ nhận
+            VD: nguoinhan@gmail.com
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MailUtility.Subject">
+            <summary>
+            Trả về hoặc thiết lập chủ đề của thư
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MailUtility.Body">
+            <summary>
+            Trả về hoặc thiết lập nội dung của thư
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MailUtility.IsBodyHtml">
+            <summary>
+            Trả về hoặc thiết lập cấu hình sử dụng mã HTML trong nội dung thư
+            </summary>
+        </member>
+        <member name="M:CodeUtility.MailUtility.SendMail(System.Exception@)">
+            <summary>
+            Gửi email. Có bắt lỗi ngoại lệ (nếu có).
+            </summary>
+            <param name="error">Chứa lỗi ngoại lệ bắt được trong quá trình gửi mail.</param>
+            <returns>True: đã gửi thư; False: không thể gửi thư</returns>
+        </member>
+        <member name="M:CodeUtility.MailUtility.SendMail">
+            <summary>
+            Gửi email.
+            </summary>
+            <returns>True: đã gửi thư; False: không thể gửi thư</returns>
+        </member>
+        <member name="M:CodeUtility.MailUtility.SendMail(System.String,System.String,System.String,System.Int32,System.Boolean,System.String,System.String,System.String,System.Boolean,System.Exception@)">
+            <summary>
+            Gửi email có bắt lỗi ngoại lệ (nếu có)
+            </summary>
+            <param name="from">Địa chỉ gửi</param>
+            <param name="password">Mật khẩu gửi</param>
+            <param name="host">Địa chỉ máy chủ</param>
+            <param name="port">Cổng máy chủ</param>
+            <param name="enableSSL">True: thiết lập bảo mật SSL; False: không bảo mật</param>
+            <param name="to">Địa chỉ người nhận</param>
+            <param name="subject">Chủ đề của thư</param>
+            <param name="body">Nội dung thư</param>
+            <param name="isBodyHtml">True: có chứa định dạng HTML; False: không chứa định dạng HTML</param>
+            <param name="error">Chứa lỗi ngoại lệ bắt được trong quá trình gửi mail</param>
+            <returns>True: đã gửi thư; False: không thể gửi thư</returns>
+        </member>
+        <member name="M:CodeUtility.MailUtility.SendMail(System.String,System.String,System.String,System.Int32,System.Boolean,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Gửi email.
+            </summary>
+            <param name="from">Địa chỉ gửi</param>
+            <param name="password">Mật khẩu gửi</param>
+            <param name="host">Địa chỉ máy chủ</param>
+            <param name="port">Cổng máy chủ</param>
+            <param name="enableSSL">True: thiết lập bảo mật SSL; False: không bảo mật</param>
+            <param name="to">Địa chỉ người nhận</param>
+            <param name="subject">Chủ đề của thư</param>
+            <param name="body">Nội dung thư</param>
+            <param name="isBodyHtml">True: có chứa định dạng HTML; False: không chứa định dạng HTML</param>
+            <returns>True: đã gửi thư; False: không thể gửi thư</returns>
+        </member>
+        <member name="T:CodeUtility.RandomUtility">
+            <summary>
+            RandomUtility
+            </summary>
+        </member>
+        <member name="M:CodeUtility.RandomUtility.RandomInt(System.Int32,System.Int32)">
+            <summary>
+            Trả về một số nguyên ngẫu nhiên không âm.
+            Giá trị nằm trong khoảng từ minValue -> maxValue
+            </summary>
+            <param name="minValue">
+            Giá trị ngẫu nhiên nhỏ nhất. Giá trị này cần >= 0
+            </param>
+            <param name="maxValue">
+            Giá trị ngẫu nhiên lớn nhất. Giá trị này cần >= minValue
+            </param>
+            <returns>Trả về một số nguyên ngẫu nhiên không âm.</returns>
+        </member>
+        <member name="M:CodeUtility.RandomUtility.RandomInt(System.Int32)">
+            <summary>
+            Trả về một số nguyên ngẫu nhiên không âm.
+            Giá trị nằm trong khoảng từ 0 -> maxValue.
+            </summary>
+            <param name="maxValue">
+            Giá trị ngẫu nhiên lớn nhất. Giá trị này cần >= 0
+            </param>
+            <returns>Trả về một số nguyên ngẫu nhiên không âm.</returns>
+        </member>
+        <member name="M:CodeUtility.RandomUtility.RandomInt">
+            <summary>
+            Trả về một số nguyên ngẫu nhiên không âm.
+            </summary>
+            <returns>Trả về một số nguyên ngẫu nhiên không âm.</returns>
+        </member>
+        <member name="M:CodeUtility.RandomUtility.RandomDouble(System.Double,System.Double)">
+            <summary>
+            Trả về một số thực ngẫu nhiên không âm.
+            Giá trị nằm trong khoảng từ minValue -> maxValue
+            </summary>
+            <param name="minValue">
+            Giá trị ngẫu nhiên nhỏ nhất. Giá trị này cần >= 0
+            </param>
+            <param name="maxValue">
+            Giá trị ngẫu nhiên lớn nhất. Giá trị này cần >= minValue
+            </param>
+            <returns>Trả về một số thực ngẫu nhiên không âm.</returns>
+        </member>
+        <member name="M:CodeUtility.RandomUtility.RandomDouble(System.Double)">
+            <summary>
+            Trả về một số thực ngẫu nhiên không âm.
+            Giá trị nằm trong khoảng từ 0 -> maxValue.
+            </summary>
+            <param name="maxValue">
+            Giá trị ngẫu nhiên lớn nhất. Giá trị này cần >= 0
+            </param>
+            <returns>Trả về một số thực ngẫu nhiên không âm.</returns>
+        </member>
+        <member name="M:CodeUtility.RandomUtility.RandomDouble">
+            <summary>
+            Trả về một số thực ngẫu nhiên không âm.
+            </summary>
+            <returns>Trả về một số thực ngẫu nhiên không âm.</returns>
+        </member>
+        <member name="M:CodeUtility.RandomUtility.RandomString(System.Int32,System.Int32)">
+            <summary>
+            Tạo một chuỗi ngẫu nhiên có chiều dài ngẫu nhiên nằm trong khoảng từ minLength -> maxLength.
+            Trả về một chuỗi ngẫu nhiên gồm ký tự thường, ký tự in hoa, số và các ký hiệu.
+            Ký tự gồm: abcdefghijklmnopqrstuvwxyz.
+            Ký tự in hoa gồm: ABCDEFGHIJKLMNOPQRSTUVWXYZ.
+            Số gồm: 0123456789.
+            Các ký hiệu gồm: ~!@#$%^&amp;()_+-*/.
+            </summary>
+            <param name="minLength">
+            Chiều dài tối thiểu của chuỗi ngẫu nhiên. Giá trị này cần >= 0
+            </param>
+            <param name="maxLength">
+            Chiều dài tối đa của chuỗi ngẫu nhiên. Giá trị này cần >= minValue
+            </param>
+            <returns>Trả về một chuỗi ngẫu nhiên có chiều dài ngẫu nhiên nằm trong khoảng từ minLength -> maxLength.</returns>
+        </member>
+        <member name="M:CodeUtility.RandomUtility.RandomString(System.Int32)">
+            <summary>
+            Tạo một chuỗi ngẫu nhiên có chiều dài cố định.
+            Trả về một chuỗi ngẫu nhiên gồm ký tự thường, ký tự in hoa, số và các ký hiệu.
+            Ký tự gồm: abcdefghijklmnopqrstuvwxyz.
+            Ký tự in hoa gồm: ABCDEFGHIJKLMNOPQRSTUVWXYZ.
+            Số gồm: 0123456789.
+            Các ký hiệu gồm: ~!@#$%^&amp;()_+-*/.
+            </summary>
+            <param name="length">
+            Chiều dài của chuỗi ngẫu nhiên.
+            </param>
+            <returns>Trả về một chuỗi ngẫu nhiên có chiều dài cố định.</returns>
+        </member>
+        <member name="M:CodeUtility.RandomUtility.RandomPassword(System.Int32,System.Int32)">
+            <summary>
+            Trả về một mật khẩu ngẫu nhiên có chiều dài ngẫu nhiên nằm trong khoảng từ minLength -> maxLength.
+            </summary>
+            <param name="minLength">
+            Chiều dài tối thiểu của chuỗi ngẫu nhiên. Giá trị này cần >= 0
+            </param>
+            <param name="maxLength">
+            Chiều dài tối đa của chuỗi ngẫu nhiên. Giá trị này cần >= minValue
+            </param>
+            <returns>Trả về một mật khẩu ngẫu nhiên có chiều dài ngẫu nhiên nằm trong khoảng từ minLength -> maxLength.</returns>
+        </member>
+        <member name="M:CodeUtility.RandomUtility.RandomPassword(System.Int32)">
+            <summary>
+            Trả về một mật khẩu ngẫu nhiên có chiều dài cố định.
+            </summary>
+            <param name="length">
+            Chiều dài của chuỗi ngẫu nhiên.
+            </param>
+            <returns>Trả về một mật khẩu ngẫu nhiên có chiều dài cố định.</returns>
+        </member>
+        <member name="M:CodeUtility.RandomUtility.RandomID">
+            <summary>
+            Phát sinh một ID ngẫu nhiên không trùng lắp. ID có dạng [605ed2f95327417987f1c6551096cf2e] với 32 ký tự.
+            </summary>
+            <returns>Phát sinh một ID ngẫu nhiên không trùng lắp.</returns>
+        </member>
+        <member name="T:CodeUtility.SecurityUtility">
+            <summary>
+            SecurityUtility
+            </summary>
+        </member>
+        <member name="M:CodeUtility.SecurityUtility.MD5Hash(System.Object)">
+            <summary>
+            Mã hóa dùng thuật toán băm MD5.
+            Trả về giá trị sau khi được mã hóa có chiều dài cố định là 32 ký tự.
+            </summary>
+            <param name="value">Giá trị cần mã hóa.</param>
+            <returns>Trả về giá trị sau khi được mã hóa có chiều dài cố định là 32 ký tự.</returns>
+        </member>
+        <member name="M:CodeUtility.SecurityUtility.MD5Hash(System.Object,System.String)">
+            <summary>
+            Mã hóa dùng thuật toán băm MD5 kết hợp với salt.
+            Trả về giá trị sau khi được mã hóa có chiều dài cố định là 32 ký tự.
+            </summary>
+            <param name="value">Giá trị cần mã hóa.</param>
+            <param name="salt">Giá trị dùng làm khóa mã hóa.</param>
+            <returns>Trả về giá trị sau khi được mã hóa có chiều dài cố định là 32 ký tự.</returns>
+        </member>
+        <member name="M:CodeUtility.SecurityUtility.SHA256Hash(System.Object)">
+            <summary>
+            Mã hóa dùng thuật toán băm SHA256.
+            Trả về giá trị sau khi được mã hóa có chiều dài cố định là 64 ký tự.
+            </summary>
+            <param name="value">Giá trị cần mã hóa.</param>
+            <returns>Trả về giá trị sau khi được mã hóa có chiều dài cố định là 64 ký tự.</returns>
+        </member>
+        <member name="M:CodeUtility.SecurityUtility.SHA256Hash(System.Object,System.String)">
+            <summary>
+            Mã hóa dùng thuật toán băm SHA256 kết hợp với salt.
+            Trả về giá trị sau khi được mã hóa có chiều dài cố định là 64 ký tự.
+            </summary>
+            <param name="value">Giá trị cần mã hóa.</param>
+            <param name="salt">Giá trị dùng làm khóa mã hóa.</param>
+            <returns>Trả về giá trị sau khi được mã hóa có chiều dài cố định là 64 ký tự.</returns>
+        </member>
+        <member name="M:CodeUtility.SecurityUtility.SHA512Hash(System.Object)">
+            <summary>
+            Mã hóa dùng thuật toán băm SHA512.
+            Trả về giá trị sau khi được mã hóa có chiều dài cố định là 64 ký tự.
+            </summary>
+            <param name="value">Giá trị cần mã hóa.</param>
+            <returns>Trả về giá trị sau khi được mã hóa có chiều dài cố định là 64 ký tự.</returns>
+        </member>
+        <member name="M:CodeUtility.SecurityUtility.SHA512Hash(System.Object,System.String)">
+            <summary>
+            Mã hóa dùng thuật toán băm SHA512 kết hợp với salt.
+            Trả về giá trị sau khi được mã hóa có chiều dài cố định là 64 ký tự.
+            </summary>
+            <param name="value">Giá trị cần mã hóa.</param>
+            <param name="salt">Giá trị dùng làm khóa mã hóa.</param>
+            <returns>Trả về giá trị sau khi được mã hóa có chiều dài cố định là 64 ký tự.</returns>
+        </member>
+        <member name="M:CodeUtility.SecurityUtility.AES256Encrypt(System.Object,System.String)">
+            <summary>
+            Mã hóa dữ liệu với thuật toán AES256.
+            Trả về giá trị sau khi được mã hóa.
+            </summary>
+            <param name="value">Giá trị cần mã hóa.</param>
+            <param name="password">Mật khẩu dùng để mã hóa</param>
+            <returns>Trả về giá trị sau khi được mã hóa.</returns>
+        </member>
+        <member name="M:CodeUtility.SecurityUtility.AES256Encrypt(System.Object,System.String,System.String)">
+            <summary>
+            Mã hóa dữ liệu với thuật toán AES256.
+            Trả về giá trị sau khi được mã hóa.
+            </summary>
+            <param name="value">Giá trị cần mã hóa.</param>
+            <param name="password">Mật khẩu dùng để mã hóa</param>
+            <param name="salt">Giá trị dùng làm khóa mã hóa</param>
+            <returns>Trả về giá trị sau khi được mã hóa.</returns>
+        </member>
+        <member name="M:CodeUtility.SecurityUtility.AES256Decrypt(System.Object,System.String,System.Exception@)">
+            <summary>
+            Giải mã dữ liệu với thuật toán AES256. Có bắt lỗi ngoại lệ nếu có.
+            Trả về giá trị sau khi được giải mã.
+            Nếu giải mã không thành công thì trả về chuỗi rỗng.
+            </summary>
+            <param name="value">Giá trị đã mã hóa cần được giải mã.</param>
+            <param name="password">Mật khẩu dùng để giải hóa</param>
+            <param name="error">Chứa lỗi ngoại lệ khi giải mã nếu có.</param>
+            <returns>Trả về giá trị sau khi được giải mã. Nếu giải mã không thành công thì trả về chuỗi rỗng.</returns>
+        </member>
+        <member name="M:CodeUtility.SecurityUtility.AES256Decrypt(System.Object,System.String,System.String,System.Exception@)">
+            <summary>
+            Giải mã dữ liệu với thuật toán AES256. Có bắt lỗi ngoại lệ nếu có.
+            Trả về giá trị sau khi được giải mã.
+            Nếu giải mã không thành công thì trả về chuỗi rỗng.
+            </summary>
+            <param name="value">Giá trị đã mã hóa cần được giải mã.</param>
+            <param name="password">Mật khẩu dùng để giải hóa</param>
+            <param name="salt">Giá trị dùng làm khóa giải hóa</param>
+            <param name="error">Chứa lỗi ngoại lệ khi giải mã nếu có.</param>
+            <returns>Trả về giá trị sau khi được giải mã. Nếu giải mã không thành công thì trả về chuỗi rỗng.</returns>
+        </member>
+        <member name="M:CodeUtility.SecurityUtility.AES256Decrypt(System.Object,System.String)">
+            <summary>
+            Giải mã dữ liệu với thuật toán AES256.
+            Trả về giá trị sau khi được giải mã.
+            Nếu giải mã không thành công thì trả về chuỗi rỗng.
+            </summary>
+            <param name="value">Giá trị đã mã hóa cần được giải mã.</param>
+            <param name="password">Mật khẩu dùng để giải hóa</param>
+            <returns>Trả về giá trị sau khi được giải mã. Nếu giải mã không thành công thì trả về chuỗi rỗng.</returns>
+        </member>
+        <member name="M:CodeUtility.SecurityUtility.AES256Decrypt(System.Object,System.String,System.String)">
+            <summary>
+            Giải mã dữ liệu với thuật toán AES256.
+            Trả về giá trị sau khi được giải mã.
+            Nếu giải mã không thành công thì trả về chuỗi rỗng.
+            </summary>
+            <param name="value">Giá trị đã mã hóa cần được giải mã.</param>
+            <param name="password">Mật khẩu dùng để giải hóa</param>
+            <param name="salt">Giá trị dùng làm khóa giải hóa</param>
+            <returns>Trả về giá trị sau khi được giải mã. Nếu giải mã không thành công thì trả về chuỗi rỗng.</returns>
+        </member>
+        <member name="M:CodeUtility.SecurityUtility.Base64Encrypt(System.String)">
+            <summary>
+            Mã hóa dữ liệu về dạng Base64 Unicode String.
+            Trả về giá trị sau khi được mã hóa. 
+            </summary>
+            <param name="value">Giá trị cần mã hóa.</param>
+            <returns>Trả về giá trị sau khi được mã hóa.</returns>
+        </member>
+        <member name="M:CodeUtility.SecurityUtility.Base64Decrypt(System.String,System.Exception@)">
+            <summary>
+            Giải mã dữ liệu từ dạng Base64 Unicode String về dạng chuỗi. Có bắt lỗi ngoại lệ (nếu có).
+            Trả về giá trị sau khi được giải mã. 
+            </summary>
+            <param name="value">Giá trị cần giải mã.</param>
+            <param name="error">Chứa lỗi ngoại lệ khi giải mã nếu có.</param>
+            <returns>Trả về giá trị sau khi được giải mã. Nếu giải mã không thành công thì trả về chuỗi rỗng.</returns>
+        </member>
+        <member name="M:CodeUtility.SecurityUtility.Base64Decrypt(System.String)">
+            <summary>
+            Giải mã dữ liệu từ dạng Base64 Unicode String về dạng chuỗi.
+            Trả về giá trị sau khi được giải mã. 
+            </summary>
+            <param name="value">Giá trị cần giải mã.</param>
+            <returns>Trả về giá trị sau khi được giải mã. Nếu giải mã không thành công thì trả về chuỗi rỗng.</returns>
+        </member>
+        <member name="T:CodeUtility.StringUtility">
+            <summary>
+            StringUtility
+            </summary>
+        </member>
+        <member name="M:CodeUtility.StringUtility.CompactSpaces(System.Object,System.Boolean)">
+            <summary>
+            Thay thế khoảng trắng kép bằng khoảng trắng đơn.
+            Trả về chuỗi sau khi đã thay thế khoảng trắng kép bằng khoảng trắng đơn.
+            </summary>
+            <param name="value">Giá trị cần thay thế khoảng trắng kép bằng khoảng trắng đơn.</param>
+            <param name="isTrim">
+            Có tự động cắt khoảng trắng 2 đầu không?
+            True: có cắt khoảng trắng 2 đầu;
+            False: không cắt khoảng trắng 2 đầu.
+            Mặc định là false.
+            </param>
+            <returns>Trả về chuỗi sau khi đã thay thế khoảng trắng kép bằng khoảng trắng đơn.</returns>
+        </member>
+        <member name="M:CodeUtility.StringUtility.ToSecureString(System.Object)">
+            <summary>
+            Chuyển đổi một chuỗi dạng bình thường sang dạng bảo mật.
+            Trả về chuỗi đã được chuyển sang dạng bảo mật.
+            </summary>
+            <param name="value">Chuỗi cần được chuyển sang dạng bảo mật.</param>
+            <returns>Trả về chuỗi đã chuyển sang dạng bảo mật.</returns>
+        </member>
+        <member name="M:CodeUtility.StringUtility.ToUnSecureString(System.Security.SecureString)">
+            <summary>
+            Chuyển đổi một chuỗi dạng bảo mật sang dạng bình thường.
+            Trả về chuỗi đã được chuyển sang dạng bình thường.
+            </summary>
+            <param name="value">Chuỗi cần được chuyển sang dạng bình thường.</param>
+            <returns>Trả về chuỗi đã chuyển sang dạng bình thường.</returns>
+        </member>
+        <member name="M:CodeUtility.StringUtility.ToUpperCase(System.Object,System.Boolean,System.Boolean)">
+            <summary>
+            Chuyển đổi value sang chuỗi in hoa.
+            Trả về chuỗi in hoa.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="isTrim">
+            Có tự động cắt khoảng trắng 2 đầu không?
+            True: có cắt khoảng trắng 2 đầu;
+            False: không cắt khoảng trắng 2 đầu.
+            Mặc định là false.
+            </param>
+            <param name="isCompactSpaces">
+            Có tự động thay khoảng trắng kép bằng khoảng trắng đơn hay không?
+            True: có thay khoảng trắng kép bằng khoảng trắng đơn.
+            Fasle: không thay khoảng trắng kép bằng khoảng trắng đơn.
+            Mặc định là false.
+            </param>
+            <returns>Trả về chuỗi in hoa.</returns>
+        </member>
+        <member name="M:CodeUtility.StringUtility.ToLowerCase(System.Object,System.Boolean,System.Boolean)">
+            <summary>
+            Chuyển đổi value sang chuỗi in thường.
+            Trả về chuỗi in thường.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="isTrim">
+            Có tự động cắt khoảng trắng 2 đầu không?
+            True: có cắt khoảng trắng 2 đầu;
+            False: không cắt khoảng trắng 2 đầu.
+            Mặc định là false.
+            </param>
+            <param name="isCompactSpaces">
+            Có tự động thay khoảng trắng kép bằng khoảng trắng đơn hay không?
+            True: có thay khoảng trắng kép bằng khoảng trắng đơn.
+            Fasle: không thay khoảng trắng kép bằng khoảng trắng đơn.
+            Mặc định là false.
+            </param>
+            <returns>Trả về chuỗi in thường.</returns>
+        </member>
+        <member name="M:CodeUtility.StringUtility.ToTitleCase(System.Object,System.Boolean,System.Boolean)">
+            <summary>
+            Chuyển đổi value sang chuỗi dạng in hoa từng ký tự đầu.
+            Trả về chuỗi dạng in hoa từng ký tự đầu.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="isTrim">
+            Có tự động cắt khoảng trắng 2 đầu không?
+            True: có cắt khoảng trắng 2 đầu;
+            False: không cắt khoảng trắng 2 đầu.
+            Mặc định là false.
+            </param>
+            <param name="isCompactSpaces">
+            Có tự động thay khoảng trắng kép bằng khoảng trắng đơn hay không?
+            True: có thay khoảng trắng kép bằng khoảng trắng đơn.
+            Fasle: không thay khoảng trắng kép bằng khoảng trắng đơn.
+            Mặc định là false.
+            </param>
+            <returns>Trả về chuỗi dạng in hoa từng ký tự đầu.</returns>
+        </member>
+        <member name="M:CodeUtility.StringUtility.ToNoSignFormat(System.Object,System.Boolean,System.Boolean)">
+            <summary>
+            Chuyển đổi chuỗi sang kiểu không dấu. Trả về chuỗi đã loại bỏ tất cả dấu.
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="isTrim">
+            Có tự động cắt khoảng trắng 2 đầu không?
+            True: có cắt khoảng trắng 2 đầu;
+            False: không cắt khoảng trắng 2 đầu.
+            Mặc định là false.
+            </param>
+            <param name="isCompactSpaces">
+            Có tự động thay khoảng trắng kép bằng khoảng trắng đơn hay không?
+            True: có thay khoảng trắng kép bằng khoảng trắng đơn.
+            Fasle: không thay khoảng trắng kép bằng khoảng trắng đơn.
+            Mặc định là false.
+            </param>
+            <returns>Trả về chuỗi đã chuyển đổi kiểu.</returns>
+        </member>
+        <member name="M:CodeUtility.StringUtility.ToUrlFormat(System.Object,System.Boolean,CodeUtility.StringCaseType)">
+            <summary>
+            Chuyển đổi chuỗi sang kiểu của URL. Trả về chuỗi đã loại bỏ các ký tự đặc biệt mà URL không cho phép. 
+            </summary>
+            <param name="value">Giá trị cần chuyển đổi kiểu.</param>
+            <param name="isRemoveAllSigns">True: có loại bỏ tất cả các dấu; False: không loại bỏ các dấu. Mặc định là True.</param>
+            <param name="stringCaseType">Kiểu chuyển đổi kiểu chữ. Mặc định là LowerCase.</param>
+            <returns>Trả về chuỗi đã loại bỏ các ký tự đặc biệt mà URL không cho phép.</returns>
+        </member>
+        <member name="M:CodeUtility.StringUtility.ToUrlEncode(System.Object,System.Boolean)">
+            <summary>
+            Mã hóa Url.
+            Trả về Url đã mã hóa.
+            </summary>
+            <param name="value">Giá trị cần mã hóa Url.</param>
+            <param name="isTrim">
+            Có tự động cắt khoảng trắng 2 đầu không?
+            True: có cắt khoảng trắng 2 đầu;
+            False: không cắt khoảng trắng 2 đầu.
+            Mặc định là false.
+            </param>
+            <returns>Trả về Url đã mã hóa.</returns>
+        </member>
+        <member name="M:CodeUtility.StringUtility.ToUrlDecode(System.Object,System.Boolean)">
+            <summary>
+            Giải mã Url.
+            Trả về Url đã giải mã.
+            </summary>
+            <param name="value">Giá trị cần giải mã Url.</param>
+            <param name="isTrim">
+            Có tự động cắt khoảng trắng 2 đầu không?
+            True: có cắt khoảng trắng 2 đầu;
+            False: không cắt khoảng trắng 2 đầu.
+            Mặc định là false.
+            </param>
+            <returns>Trả về Url đã giải mã.</returns>
+        </member>
+        <member name="M:CodeUtility.StringUtility.ToHtmlEncode(System.Object,System.Boolean)">
+            <summary>
+            Mã hóa Html.
+            Trả về Html đã mã hóa.
+            </summary>
+            <param name="value">Giá trị cần mã hóa Html.</param>
+            <param name="isTrim">
+            Có tự động cắt khoảng trắng 2 đầu không?
+            True: có cắt khoảng trắng 2 đầu;
+            False: không cắt khoảng trắng 2 đầu.
+            Mặc định là false.
+            </param>
+            <returns>Trả về Html đã mã hóa.</returns>
+        </member>
+        <member name="M:CodeUtility.StringUtility.ToHtmlDecode(System.Object,System.Boolean)">
+            <summary>
+            Giải mã Html.
+            Trả về Html đã giải mã.
+            </summary>
+            <param name="value">Giá trị cần giải mã Html.</param>
+            <param name="isTrim">
+            Có tự động cắt khoảng trắng 2 đầu không?
+            True: có cắt khoảng trắng 2 đầu;
+            False: không cắt khoảng trắng 2 đầu.
+            Mặc định là false.
+            </param>
+            <returns>Trả về Html đã giải mã.</returns>
+        </member>
+        <member name="M:CodeUtility.StringUtility.Left(System.Object,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Trích xuất chuỗi con từ trái sang phải của chuỗi value ban đầu với số ký tự xác định.
+            Tự động cắt khoảng trắng 2 đầu và thay thế khoảng trắng kép nếu có.
+            Trả về chuỗi con theo yêu cầu.
+            </summary>
+            <param name="value">Giá trị cần trích lấy chuỗi con.</param>
+            <param name="length">Số ký tự tối đa cần lấy.</param>
+            <param name="isRemoveMissingWord">
+            Có tự động loại bỏ từ khuyết hay không?
+            True: có loại bỏ từ khuyết;
+            False: không loại bỏ từ khuyết.
+            Mặc định là false.
+            </param>
+            <param name="hasThreeDots">
+            Có tự động thêm dấu [...] vào sau chuỗi con hay không?
+            True: có thêm dấu [...] vào sau chuỗi con;
+            False: không thêm dấu [...] vào sau chuỗi con.
+            Mặc định là false.
+            </param>
+            <returns>Trả về chuỗi con theo yêu cầu.</returns>
+        </member>
+        <member name="M:CodeUtility.StringUtility.Right(System.Object,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Trích xuất chuỗi con từ phải sang trái của chuỗi value ban đầu với số ký tự xác định.
+            Tự động cắt khoảng trắng 2 đầu và thay thế khoảng trắng kép nếu có.
+            Trả về chuỗi con theo yêu cầu.
+            </summary>
+            <param name="value">Giá trị cần trích lấy chuỗi con.</param>
+            <param name="length">Số ký tự tối đa cần lấy.</param>
+            <param name="isRemoveMissingWord">
+            Có tự động loại bỏ từ khuyết hay không?
+            True: có loại bỏ từ khuyết;
+            False: không loại bỏ từ khuyết.
+            Mặc định là false.
+            </param>
+            <param name="hasThreeDots">
+            Có tự động thêm dấu [...] vào trước chuỗi con hay không?
+            True: có thêm dấu [...] vào trước chuỗi con;
+            False: không thêm dấu [...] vào trước chuỗi con.
+            Mặc định là false.
+            </param>
+            <returns>Trả về chuỗi con theo yêu cầu.</returns>
+        </member>
+        <member name="M:CodeUtility.StringUtility.MiddleTrim(System.Object,System.Int32,System.Boolean)">
+            <summary>
+            Trích xuất chuỗi con từ 2 đầu của chuỗi value ban đầu với số ký tự xác định.
+            Tự động cắt khoảng trắng 2 đầu và thay thế khoảng trắng kép nếu có.
+            Trả về chuỗi con theo yêu cầu.
+            </summary>
+            <param name="value">Giá trị cần trích lấy chuỗi con.</param>
+            <param name="length">Số ký tự tối đa cần lấy.</param>
+            <param name="isRemoveMissingWord">
+            Có tự động loại bỏ từ khuyết hay không?
+            True: có loại bỏ từ khuyết;
+            False: không loại bỏ từ khuyết.
+            Mặc định là false.
+            </param>
+            <returns>Trả về chuỗi con theo yêu cầu.</returns>
+        </member>
+        <member name="M:CodeUtility.StringUtility.StringFormat(System.Object,System.IFormatProvider,System.Object[])">
+            <summary>
+            Định dạng chuỗi với các tham số. Hoạt động tương tự như hàm string.Format.
+            Trả về chuỗi đã được định dạng.
+            VD1: "{0} xin chào {1}".FormatString("Tớ", "Bạn"); ==> Kết quả là: Tớ xin chào Bạn;
+            VD2: "Bây giờ là: {0:dd/MM/yyyy HH:mm:ss}".FormatString(DateTime.Now); ==> Kết quả là: Bây giờ là: 11/12/2015 11:30:00
+            </summary>
+            <param name="format">Mẫu cần định dạng.</param>
+            <param name="provider">
+            Loại FormatProvider. 
+            Ví dụ 1: CultureInfo.InvariantCulture.
+            Ví dụ 2: new CultureInfo("vi-VN").
+            </param>
+            <param name="args">Danh sách các tham số.</param>
+            <returns>Trả về chuỗi đã được định dạng.</returns>
+        </member>
+        <member name="M:CodeUtility.StringUtility.StringFormat(System.Object,System.Object[])">
+            <summary>
+            Định dạng chuỗi với các tham số. Hoạt động tương tự như hàm string.Format.
+            Trả về chuỗi đã được định dạng.
+            VD1: "{0} xin chào {1}".FormatString("Tớ", "Bạn"); ==> Kết quả là: Tớ xin chào Bạn;
+            VD2: "Bây giờ là: {0:dd/MM/yyyy HH:mm:ss}".FormatString(DateTime.Now); ==> Kết quả là: Bây giờ là: 11/12/2015 11:30:00
+            </summary>
+            <param name="format">Mẫu cần định dạng.</param>
+            <param name="args">Danh sách các tham số.</param>
+            <returns>Trả về chuỗi đã được định dạng.</returns>
+        </member>
+        <member name="M:CodeUtility.StringUtility.Split(System.Object,System.Char,System.Int32,System.StringSplitOptions)">
+            <summary>
+            Phân chia chuỗi thành một mảng các chuỗi con. Trả về một mảng chứa các chuỗi con đã được phân chia.
+            </summary>
+            <param name="value">Chuỗi cần được chia thành nhiều đoạn.</param>
+            <param name="separator">Ký tự làm bộ chia.</param>
+            <param name="count">
+            Số chuỗi con tối đa cần lấy.
+            Thiết lập count = 0 để không giới hạn số chuỗi con.
+            </param>
+            <param name="options">
+            RemoveEmptyEntries: tự động loại bỏ những chuỗi con rỗng;
+            None: không loại bỏ chuỗi con rỗng. Mặc định là none.
+            </param>
+            <returns>Trả về một mảng chứa các chuỗi con đã được phân chia.</returns>
+        </member>
+        <member name="M:CodeUtility.StringUtility.Split(System.Object,System.Char,System.Int32)">
+            <summary>
+            Phân chia chuỗi thành một mảng các chuỗi con. Trả về một mảng chứa các chuỗi con đã được phân chia.
+            </summary>
+            <param name="value">Chuỗi cần được chia thành nhiều đoạn.</param>
+            <param name="separator">Ký tự làm bộ chia.</param>
+            <param name="count">Số chuỗi con tối đa cần lấy.</param>
+            <returns>Trả về một mảng chứa các chuỗi con đã được phân chia.</returns>
+        </member>
+        <member name="M:CodeUtility.StringUtility.Split(System.Object,System.Char,System.StringSplitOptions)">
+            <summary>
+            Phân chia chuỗi thành một mảng các chuỗi con. Trả về một mảng chứa các chuỗi con đã được phân chia.
+            </summary>
+            <param name="value">Chuỗi cần được chia thành nhiều đoạn.</param>
+            <param name="separator">Ký tự làm bộ chia.</param>
+            <param name="options">
+            RemoveEmptyEntries: tự động loại bỏ những chuỗi con rỗng;
+            None: không loại bỏ chuỗi con rỗng.
+            </param>
+            <returns>Trả về một mảng chứa các chuỗi con đã được phân chia.</returns>
+        </member>
+        <member name="M:CodeUtility.StringUtility.Split(System.Object,System.Char)">
+            <summary>
+            Phân chia chuỗi thành một mảng các chuỗi con. Trả về một mảng chứa các chuỗi con đã được phân chia.
+            </summary>
+            <param name="value">Chuỗi cần được chia thành nhiều đoạn.</param>
+            <param name="separator">Ký tự làm bộ chia.</param>
+            <returns>Trả về một mảng chứa các chuỗi con đã được phân chia.</returns>
+        </member>
+        <member name="M:CodeUtility.StringUtility.Split(System.Object,System.String,System.Int32,System.StringSplitOptions)">
+            <summary>
+            Phân chia chuỗi thành một mảng các chuỗi con. Trả về một mảng chứa các chuỗi con đã được phân chia.
+            </summary>
+            <param name="value">Chuỗi cần được chia thành nhiều đoạn.</param>
+            <param name="separator">Chuỗi làm bộ chia.</param>
+            <param name="count">
+            Số chuỗi con tối đa cần lấy.
+            Thiết lập count = 0 để không giới hạn số chuỗi con.
+            </param>
+            <param name="options">
+            RemoveEmptyEntries: tự động loại bỏ những chuỗi con rỗng;
+            None: không loại bỏ chuỗi con rỗng. Mặc định là none.
+            </param>
+            <returns>Trả về một mảng chứa các chuỗi con đã được phân chia.</returns>
+        </member>
+        <member name="M:CodeUtility.StringUtility.Split(System.Object,System.String,System.Int32)">
+            <summary>
+            Phân chia chuỗi thành một mảng các chuỗi con. Trả về một mảng chứa các chuỗi con đã được phân chia.
+            </summary>
+            <param name="value">Chuỗi cần được chia thành nhiều đoạn.</param>
+            <param name="separator">Chuỗi làm bộ chia.</param>
+            <param name="count">Số chuỗi con tối đa cần lấy.</param>
+            <returns>Trả về một mảng chứa các chuỗi con đã được phân chia.</returns>
+        </member>
+        <member name="M:CodeUtility.StringUtility.Split(System.Object,System.String,System.StringSplitOptions)">
+            <summary>
+            Phân chia chuỗi thành một mảng các chuỗi con. Trả về một mảng chứa các chuỗi con đã được phân chia.
+            </summary>
+            <param name="value">Chuỗi cần được chia thành nhiều đoạn.</param>
+            <param name="separator">Chuỗi làm bộ chia.</param>
+            <param name="options">
+            RemoveEmptyEntries: tự động loại bỏ những chuỗi con rỗng;
+            None: không loại bỏ chuỗi con rỗng.
+            </param>
+            <returns>Trả về một mảng chứa các chuỗi con đã được phân chia.</returns>
+        </member>
+        <member name="M:CodeUtility.StringUtility.Split(System.Object,System.String)">
+            <summary>
+            Phân chia chuỗi thành một mảng các chuỗi con. Trả về một mảng chứa các chuỗi con đã được phân chia.
+            </summary>
+            <param name="value">Chuỗi cần được chia thành nhiều đoạn.</param>
+            <param name="separator">Chuỗi làm bộ chia.</param>
+            <returns>Trả về một mảng chứa các chuỗi con đã được phân chia.</returns>
+        </member>
+        <member name="M:CodeUtility.StringUtility.SplitToKeywordsArray(System.Object,System.String,System.StringSplitOptions,System.Boolean,CodeUtility.StringCaseType)">
+            <summary>
+            Phân đoạn một chuỗi chứa các Keyword thành một mảng các Keyword đơn lẻ dựa trên bộ chia là một chuỗi.
+            Mỗi Keyword gồm có 2 phần: Text và Value.
+            Text là Keyword còn nguyên dạng ban đầu.
+            Value là Keyword đã xử lý theo các tùy chọn options, removeAllSignsInValue và valueCaseType.
+            Trả về một mảng các Keyword đã được phân đoạn và xử lý.
+            </summary>
+            <param name="value">Chuỗi cần phân đoạn thành mảng các Keyword.</param>
+            <param name="splitter">Ký tự làm bộ chia.</param>
+            <param name="options">
+            RemoveEmptyEntries: tự động loại bỏ những chuỗi con rỗng;
+            None: không loại bỏ chuỗi con rỗng. Mặc định là none.
+            </param>
+            <param name="removeAllSignsInValue">Tùy chọn gỡ bỏ toàn bộ dấu trong Value.</param>
+            <param name="valueCaseType">Tùy chọn kiểu chữ in hoa-thường trong Value.</param>
+            <returns>Trả về một mảng các Keyword đã được phân đoạn và xử lý.</returns>
+        </member>
+        <member name="M:CodeUtility.StringUtility.SplitToKeywordsArray(System.Object,System.Char,System.StringSplitOptions,System.Boolean,CodeUtility.StringCaseType)">
+            <summary>
+            Phân đoạn một chuỗi chứa các Keyword thành một mảng các Keyword đơn lẻ dựa trên bộ chia là một ký tự.
+            Mỗi Keyword gồm có 2 phần: Text và Value.
+            Text là Keyword còn nguyên dạng ban đầu.
+            Value là Keyword đã xử lý theo các tùy chọn options, removeAllSignsInValue và valueCaseType.
+            Trả về một mảng các Keyword đã được phân đoạn và xử lý.
+            </summary>
+            <param name="value">Chuỗi cần phân đoạn thành mảng các Keyword.</param>
+            <param name="splitter">Ký tự làm bộ chia.</param>
+            <param name="options">
+            RemoveEmptyEntries: tự động loại bỏ những chuỗi con rỗng;
+            None: không loại bỏ chuỗi con rỗng. Mặc định là none.
+            </param>
+            <param name="removeAllSignsInValue">Tùy chọn gỡ bỏ toàn bộ dấu trong Value.</param>
+            <param name="valueCaseType">Tùy chọn kiểu chữ in hoa-thường trong Value.</param>
+            <returns>Trả về một mảng các Keyword đã được phân đoạn và xử lý.</returns>
+        </member>
+        <member name="M:CodeUtility.StringUtility.SplitToTextValueArray(System.Object,System.String,System.String,System.StringSplitOptions)">
+            <summary>
+            Phân đoạn một chuỗi thành một mảng các phần tử dựa trên bộ chia là một chuỗi.
+            Trả về một mảng các phần tử đã được phân đoạn.
+            Mỗi phần tử gồm có 2 phần: Text và Value.
+            </summary>
+            <param name="value">Chuỗi cần phân đoạn thành mảng các Keyword.</param>
+            <param name="primarySplitter">Chuỗi làm bộ chia lần thứ nhất.</param>
+            <param name="secondarySplitter">Chuỗi làm bộ chia lần thứ hai.</param>
+            <param name="options">
+            RemoveEmptyEntries: tự động loại bỏ những chuỗi con rỗng;
+            None: không loại bỏ chuỗi con rỗng. Mặc định là none.
+            </param>
+            <returns>Trả về một mảng các phần tử đã được phân đoạn. Mỗi phần tử gồm có 2 phần: Text và Value.</returns>
+        </member>
+        <member name="M:CodeUtility.StringUtility.SplitToTextValueArray(System.Object,System.Char,System.Char,System.StringSplitOptions)">
+            <summary>
+            Phân đoạn một chuỗi thành một mảng các phần tử dựa trên bộ chia là một ký tự.
+            Trả về một mảng các phần tử đã được phân đoạn.
+            Mỗi phần tử gồm có 2 phần: Text và Value.
+            </summary>
+            <param name="value">Chuỗi cần phân đoạn thành mảng các Keyword.</param>
+            <param name="primarySplitter">Ký tự làm bộ chia lần thứ nhất.</param>
+            <param name="secondarySplitter">Ký tự làm bộ chia lần thứ hai.</param>
+            <param name="options">
+            RemoveEmptyEntries: tự động loại bỏ những chuỗi con rỗng;
+            None: không loại bỏ chuỗi con rỗng. Mặc định là none.
+            </param>
+            <returns>Trả về một mảng các phần tử đã được phân đoạn. Mỗi phần tử gồm có 2 phần: Text và Value.</returns>
+        </member>
+        <member name="M:CodeUtility.StringUtility.Replace(System.Object,System.String,System.String,CodeUtility.SensitiveCaseMode)">
+            <summary>
+            Thay thế <paramref name="oldValue"/> thành <paramref name="newValue"/> tại những vị trí được tìm thấy trong chuỗi cần thay thế.
+            Nếu <paramref name="oldValue"/> được tìm thấy, thay thế bằng <paramref name="newValue"/> rồi trả về chuỗi mới; ngược lại trả về chuỗi ban đầu.
+            </summary>
+            <param name="value">Chuỗi cần thay thế.</param>
+            <param name="oldValue">Giá trị cần tìm.</param>
+            <param name="newValue">Giá trị thay thế</param>
+            <param name="sensitiveCaseMode">Phân biệt kiểu chữ hoa/thường khi thay thế</param>
+            <returns>Nếu <paramref name="oldValue"/> được tìm thấy, thay thế bằng <paramref name="newValue"/> rồi trả về chuỗi mới; ngược lại trả về chuỗi ban đầu.</returns>
+        </member>
+        <member name="M:CodeUtility.StringUtility.ReplaceFirst(System.Object,System.String,System.String)">
+            <summary>
+            Thay thế <paramref name="oldValue"/> thành <paramref name="newValue"/> tại vị trí đầu tiên được tìm thấy trong chuỗi cần thay thế.
+            Nếu <paramref name="oldValue"/> được tìm thấy, thay thế bằng <paramref name="newValue"/> rồi trả về chuỗi mới; ngược lại trả về chuỗi ban đầu.
+            </summary>
+            <param name="value">Chuỗi cần thay thế.</param>
+            <param name="oldValue">Giá trị cần tìm.</param>
+            <param name="newValue">Giá trị thay thế</param>
+            <returns>Nếu <paramref name="oldValue"/> được tìm thấy, thay thế bằng <paramref name="newValue"/> rồi trả về chuỗi mới; ngược lại trả về chuỗi ban đầu.</returns>
+        </member>
+        <member name="M:CodeUtility.StringUtility.ReplaceLast(System.Object,System.String,System.String)">
+            <summary>
+            Thay thế <paramref name="oldValue"/> thành <paramref name="newValue"/> tại vị trí cuối cùng được tìm thấy trong chuỗi cần thay thế.
+            Nếu <paramref name="oldValue"/> được tìm thấy, thay thế bằng <paramref name="newValue"/> rồi trả về chuỗi mới; ngược lại trả về chuỗi ban đầu.
+            </summary>
+            <param name="value">Chuỗi cần thay thế.</param>
+            <param name="oldValue">Giá trị cần tìm.</param>
+            <param name="newValue">Giá trị thay thế</param>
+            <returns>Nếu <paramref name="oldValue"/> được tìm thấy, thay thế bằng <paramref name="newValue"/> rồi trả về chuỗi mới; ngược lại trả về chuỗi ban đầu.</returns>
+        </member>
+        <member name="T:CodeUtility.TextValueString">
+            <summary>
+            TextValueString
+            </summary>
+        </member>
+        <member name="M:CodeUtility.TextValueString.#ctor">
+            <summary>
+            Khởi tạo với Text và Value nhận giá trị ban đầu là rỗng.
+            </summary>
+        </member>
+        <member name="M:CodeUtility.TextValueString.#ctor(System.String,System.String)">
+            <summary>
+            Khởi tạo với Text và Value có giá trị được chỉ định. 
+            </summary>
+            <param name="text">Giá trị ban đầu của Text.</param>
+            <param name="value">Giá trị ban đầu của Value.</param>
+        </member>
+        <member name="P:CodeUtility.TextValueString.Text">
+            <summary>
+            Thiết lập hoặc trả về giá trị của Text.
+            </summary>
+        </member>
+        <member name="P:CodeUtility.TextValueString.Value">
+            <summary>
+            Thiết lập hoặc trả về giá trị của Value.
+            </summary>
+        </member>
+        <member name="T:CodeUtility.UploadUtility">
+            <summary>
+            UploadUtility
+            </summary>
+        </member>
+        <member name="P:CodeUtility.UploadUtility.FileUpload">
+            <summary>
+            Thiết lập hoặc trả về control FileUpload
+            </summary>
+        </member>
+        <member name="P:CodeUtility.UploadUtility.FolderSave">
+            <summary>
+            Thiết lập hoặc trả về thư mục lưu file
+            </summary>
+        </member>
+        <member name="P:CodeUtility.UploadUtility.AutoGenerateFileName">
+            <summary>
+            Thiết lập hoặc trả về cấu hình tự động sinh ra tên file không trùng
+            </summary>
+        </member>
+        <member name="P:CodeUtility.UploadUtility.FullMaxWidth">
+            <summary>
+            Thiết lập hoặc trả về kích cỡ tối đa của hình lớn.
+            </summary>
+        </member>
+        <member name="P:CodeUtility.UploadUtility.ThumbMaxWidth">
+            <summary>
+            Thiết lập hoặc trả về kích cỡ tối đa của hình nhỏ.
+            </summary>
+        </member>
+        <member name="P:CodeUtility.UploadUtility.MaxFileSize">
+            <summary>
+            Thiết lập hoặc trả về dung lượng tối đa cho phép của file cần upload
+            </summary>
+        </member>
+        <member name="M:CodeUtility.UploadUtility.UploadImage(System.String@,System.String@,System.Exception@)">
+            <summary>
+            Upload hình ảnh. Có bắt lỗi ngoại lệ (nếu có).
+            </summary>
+            <param name="fullImageUrl">Chứa url đến hình lớn đã được upload lên máy Server.</param>
+            <param name="thumbImageUrl">Chứa url đến hình nhỏ đã được upload lên máy Server.</param>
+            <param name="error">Chứa lỗi ngoại lệ (nếu có) trong quá trình upload.</param>
+            <returns>Nếu upload thành công, trả về true; ngược lại, trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.UploadUtility.UploadImage(System.String@,System.String@)">
+            <summary>
+            Upload hình ảnh.
+            </summary>
+            <param name="fullImageUrl">Chứa url đến hình lớn đã được upload lên máy Server.</param>
+            <param name="thumbImageUrl">Chứa url đến hình nhỏ đã được upload lên máy Server.</param>
+            <returns>Nếu upload thành công, trả về true; ngược lại, trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.UploadUtility.UploadFile(System.String@,System.Exception@)">
+            <summary>
+            Upload file. Nhưng không cho phép upload file exe. Có bắt lỗi ngoại lệ (nếu có).
+            </summary>
+            <param name="fileSavedUrl">Chứa url đến hình lớn đã được upload lên máy Server.</param>
+            <param name="error">Chứa lỗi ngoại lệ (nếu có) trong quá trình upload.</param>
+            <returns>Nếu upload thành công, trả về true; ngược lại, trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.UploadUtility.UploadFile(System.String@)">
+            <summary>
+            Upload file. Nhưng không cho phép upload file exe.
+            </summary>
+            <param name="fileSavedUrl">Chứa url đến hình lớn đã được upload lên máy Server.</param>
+            <returns>Nếu upload thành công, trả về true; ngược lại, trả về false.</returns>
+        </member>
+        <member name="T:CodeUtility.UrlUtility">
+            <summary>
+            Url Utility. Cho phép chuyển đổi qua lại giữa các định dạng của url.
+            </summary>
+        </member>
+        <member name="M:CodeUtility.UrlUtility.ToServerRootUrl(System.String,System.Web.HttpContext,System.Boolean,System.Exception@)">
+             <summary>
+             Chuyển đổi url sang dạng ServerRootUrl (bắt đầu với dấu ~/). Có bắt lỗi ngoại lệ (nếu có).
+             Nếu url không hợp lệ, hoặc hàm này không được gọi từ một Web Page hợp lệ, hoặc có lỗi ngoại lệ thì trả về chuỗi rỗng.
+             Lưu ý: Url được chuyển đổi dựa vào vị trí tương đối của Url so với Web Page gọi hàm.
+             </summary>
+             <param name="url">
+             Url cần chuyển đổi về dạng ServerRootUrl. 
+             VD: demo.jpg; ~/images/demo.jpg; ../images/demo.jpg; /images/demo.jpg; http://demo.com/images/demo.jpg; c:\website\images\demo.jpg; 
+            </param>
+            <param name="context">
+             HttpContext của request hiện tại
+             </param>
+             <param name="keepQueryString">
+             Giữ lại toàn bộ QueryString hay không?
+             True: có giữ lại toàn bộ QueryString;
+             False: loại bỏ toàn bộ QueryString.
+             </param>
+             <param name="error">Chứa lỗi ngoại lệ (nếu có) trong quá trình chuyển đổi url.</param>
+             <returns>
+             Trả về url đã được chuyển đổi sang dạng ServerRootUrl (bắt đầu với dấu ~/). Có bắt lỗi ngoại lệ (nếu có).
+             Nếu url không hợp lệ, hoặc hàm này không được gọi từ một Web Page hợp lệ thì trả về chuỗi rỗng.
+             Lưu ý: Url được chuyển đổi dựa vào vị trí tương đối của Url so với Web Page gọi hàm.
+             </returns>
+        </member>
+        <member name="M:CodeUtility.UrlUtility.ToServerRootUrl(System.String,System.Web.HttpContext,System.Exception@)">
+             <summary>
+             Chuyển đổi url sang dạng ServerRootUrl (bắt đầu với dấu ~/). Có bắt lỗi ngoại lệ (nếu có).
+             Nếu url không hợp lệ, hoặc hàm này không được gọi từ một Web Page hợp lệ, hoặc có lỗi ngoại lệ thì trả về chuỗi rỗng.
+             Lưu ý: Url được chuyển đổi dựa vào vị trí tương đối của Url so với Web Page gọi hàm.
+             </summary>
+             <param name="url">
+             Url cần chuyển đổi về dạng ServerRootUrl. 
+             VD: demo.jpg; ~/images/demo.jpg; ../images/demo.jpg; /images/demo.jpg; http://demo.com/images/demo.jpg; c:\website\images\demo.jpg; 
+            </param>
+            <param name="context">
+             HttpContext của request hiện tại
+             </param>
+             <param name="error">Chứa lỗi ngoại lệ (nếu có) trong quá trình chuyển đổi url.</param>
+             <returns>
+             Trả về url đã được chuyển đổi sang dạng ServerRootUrl (bắt đầu với dấu ~/). Có bắt lỗi ngoại lệ (nếu có).
+             Nếu url không hợp lệ, hoặc hàm này không được gọi từ một Web Page hợp lệ thì trả về chuỗi rỗng.
+             Lưu ý: Url được chuyển đổi dựa vào vị trí tương đối của Url so với Web Page gọi hàm.
+             </returns>
+        </member>
+        <member name="M:CodeUtility.UrlUtility.ToServerRootUrl(System.String,System.Boolean,System.Exception@)">
+             <summary>
+             Chuyển đổi url sang dạng ServerRootUrl (bắt đầu với dấu ~/). Có bắt lỗi ngoại lệ (nếu có).
+             Nếu url không hợp lệ, hoặc hàm này không được gọi từ một Web Page hợp lệ, hoặc có lỗi ngoại lệ thì trả về chuỗi rỗng.
+             Lưu ý: Url được chuyển đổi dựa vào vị trí tương đối của Url so với Web Page gọi hàm.
+             </summary>
+             <param name="url">
+             Url cần chuyển đổi về dạng ServerRootUrl. 
+             VD: demo.jpg; ~/images/demo.jpg; ../images/demo.jpg; /images/demo.jpg; http://demo.com/images/demo.jpg; c:\website\images\demo.jpg; 
+            </param>
+             <param name="keepQueryString">
+             Giữ lại toàn bộ QueryString hay không?
+             True: có giữ lại toàn bộ QueryString;
+             False: loại bỏ toàn bộ QueryString.
+             </param>
+             <param name="error">Chứa lỗi ngoại lệ (nếu có) trong quá trình chuyển đổi url.</param>
+             <returns>
+             Trả về url đã được chuyển đổi sang dạng ServerRootUrl (bắt đầu với dấu ~/). Có bắt lỗi ngoại lệ (nếu có).
+             Nếu url không hợp lệ, hoặc hàm này không được gọi từ một Web Page hợp lệ thì trả về chuỗi rỗng.
+             Lưu ý: Url được chuyển đổi dựa vào vị trí tương đối của Url so với Web Page gọi hàm.
+             </returns>
+        </member>
+        <member name="M:CodeUtility.UrlUtility.ToServerRootUrl(System.String,System.Exception@)">
+             <summary>
+             Chuyển đổi url sang dạng ServerRootUrl (bắt đầu với dấu ~/). Có bắt lỗi ngoại lệ (nếu có).
+             Nếu url không hợp lệ, hoặc hàm này không được gọi từ một Web Page hợp lệ, hoặc có lỗi ngoại lệ thì trả về chuỗi rỗng.
+             Lưu ý: Url được chuyển đổi dựa vào vị trí tương đối của Url so với Web Page gọi hàm.
+             </summary>
+             <param name="url">
+             Url cần chuyển đổi về dạng ServerRootUrl. 
+             VD: demo.jpg; ~/images/demo.jpg; ../images/demo.jpg; /images/demo.jpg; http://demo.com/images/demo.jpg; c:\website\images\demo.jpg; 
+            </param>
+             <param name="error">Chứa lỗi ngoại lệ (nếu có) trong quá trình chuyển đổi url.</param>
+             <returns>
+             Trả về url đã được chuyển đổi sang dạng ServerRootUrl (bắt đầu với dấu ~/). Có bắt lỗi ngoại lệ (nếu có).
+             Nếu url không hợp lệ, hoặc hàm này không được gọi từ một Web Page hợp lệ thì trả về chuỗi rỗng.
+             Lưu ý: Url được chuyển đổi dựa vào vị trí tương đối của Url so với Web Page gọi hàm.
+             </returns>
+        </member>
+        <member name="M:CodeUtility.UrlUtility.ToServerRootUrl(System.String,System.Boolean)">
+             <summary>
+             Chuyển đổi url sang dạng ServerRootUrl (bắt đầu với dấu ~/).
+             Nếu url không hợp lệ, hoặc hàm này không được gọi từ một Web Page hợp lệ, hoặc có lỗi ngoại lệ thì trả về chuỗi rỗng.
+             Lưu ý: Url được chuyển đổi dựa vào vị trí tương đối của Url so với Web Page gọi hàm.
+             </summary>
+             <param name="url">
+             Url cần chuyển đổi về dạng ServerRootUrl. 
+             VD: demo.jpg; ~/images/demo.jpg; ../images/demo.jpg; /images/demo.jpg; http://demo.com/images/demo.jpg; c:\website\images\demo.jpg; 
+            </param>
+             <param name="keepQueryString">
+             Giữ lại toàn bộ QueryString hay không?
+             True: có giữ lại toàn bộ QueryString;
+             False: loại bỏ toàn bộ QueryString.
+             </param>
+             <returns>
+             Trả về url đã được chuyển đổi sang dạng ServerRootUrl (bắt đầu với dấu ~/).
+             Nếu url không hợp lệ, hoặc hàm này không được gọi từ một Web Page hợp lệ thì trả về chuỗi rỗng.
+             Lưu ý: Url được chuyển đổi dựa vào vị trí tương đối của Url so với Web Page gọi hàm.
+             </returns>
+        </member>
+        <member name="M:CodeUtility.UrlUtility.ToServerRootUrl(System.String)">
+             <summary>
+             Chuyển đổi url sang dạng ServerRootUrl (bắt đầu với dấu ~/).
+             Nếu url không hợp lệ, hoặc hàm này không được gọi từ một Web Page hợp lệ, hoặc có lỗi ngoại lệ thì trả về chuỗi rỗng.
+             Lưu ý: Url được chuyển đổi dựa vào vị trí tương đối của Url so với Web Page gọi hàm.
+             </summary>
+             <param name="url">
+             Url cần chuyển đổi về dạng ServerRootUrl. 
+             VD: demo.jpg; ~/images/demo.jpg; ../images/demo.jpg; /images/demo.jpg; http://demo.com/images/demo.jpg; c:\website\images\demo.jpg; 
+            </param>
+             <returns>
+             Trả về url đã được chuyển đổi sang dạng ServerRootUrl (bắt đầu với dấu ~/).
+             Nếu url không hợp lệ, hoặc hàm này không được gọi từ một Web Page hợp lệ thì trả về chuỗi rỗng.
+             Lưu ý: Url được chuyển đổi dựa vào vị trí tương đối của Url so với Web Page gọi hàm.
+             </returns>
+        </member>
+        <member name="M:CodeUtility.UrlUtility.ToClientRootUrl(System.String,System.Boolean,System.Exception@)">
+            <summary>
+            Chuyển đổi một url dạng bất kỳ về dạng client (ví dụ: ../Default.aspx).
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </summary>
+            <param name="url">
+            Url dạng relative (bắt đầu bằng chuỗi ~/). 
+            Ví dụ: ~/Default.aspx
+            </param>
+            <param name="keepQueryString">
+            Giữ lại toàn bộ QueryString hay không?
+            True: có giữ lại toàn bộ QueryString;
+            False: loại bỏ toàn bộ QueryString.
+            </param>
+            <param name="error">Chứa lỗi ngoại lệ (nếu có) trong quá trình chuyển đổi url.</param>
+            <returns>
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.UrlUtility.ToClientRootUrl(System.String,System.Exception@)">
+            <summary>
+            Chuyển đổi một url dạng bất kỳ về dạng client (ví dụ: ../Default.aspx).
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </summary>
+            <param name="url">
+            Url dạng relative (bắt đầu bằng chuỗi ~/). 
+            Ví dụ: ~/Default.aspx
+            </param>
+            <param name="error">Chứa lỗi ngoại lệ (nếu có) trong quá trình chuyển đổi url.</param>
+            <returns>
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.UrlUtility.ToClientRootUrl(System.String,System.Boolean)">
+            <summary>
+            Chuyển đổi một url dạng bất kỳ về dạng client (ví dụ: ../Default.aspx).
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </summary>
+            <param name="url">
+            Url dạng relative (bắt đầu bằng chuỗi ~/). 
+            Ví dụ: ~/Default.aspx
+            </param>
+            <param name="keepQueryString">
+            Giữ lại toàn bộ QueryString hay không?
+            True: có giữ lại toàn bộ QueryString;
+            False: loại bỏ toàn bộ QueryString.
+            </param>
+            <returns>
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.UrlUtility.ToClientRootUrl(System.String)">
+            <summary>
+            Chuyển đổi một url dạng bất kỳ về dạng client (ví dụ: ../Default.aspx).
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </summary>
+            <param name="url">
+            Url dạng relative (bắt đầu bằng chuỗi ~/). 
+            Ví dụ: ~/Default.aspx
+            </param>
+            <returns>
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.UrlUtility.ToClientUrl(System.String,System.Boolean,System.Exception@)">
+            <summary>
+            Chuyển đổi một url dạng bất kỳ về dạng client (ví dụ: ../Default.aspx).
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </summary>
+            <param name="url">
+            Url dạng relative (bắt đầu bằng chuỗi ~/). 
+            Ví dụ: ~/Default.aspx
+            </param>
+            <param name="keepQueryString">
+            Giữ lại toàn bộ QueryString hay không?
+            True: có giữ lại toàn bộ QueryString;
+            False: loại bỏ toàn bộ QueryString.
+            </param>
+            <param name="error">Chứa lỗi ngoại lệ (nếu có) trong quá trình chuyển đổi url.</param>
+            <returns>
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.UrlUtility.ToClientUrl(System.String,System.Exception@)">
+            <summary>
+            Chuyển đổi một url dạng bất kỳ về dạng client (ví dụ: ../Default.aspx).
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </summary>
+            <param name="url">
+            Url dạng relative (bắt đầu bằng chuỗi ~/). 
+            Ví dụ: ~/Default.aspx
+            </param>
+            <param name="error">Chứa lỗi ngoại lệ (nếu có) trong quá trình chuyển đổi url.</param>
+            <returns>
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.UrlUtility.ToClientUrl(System.String,System.Boolean)">
+            <summary>
+            Chuyển đổi một url dạng bất kỳ về dạng client (ví dụ: ../Default.aspx).
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </summary>
+            <param name="url">
+            Url dạng relative (bắt đầu bằng chuỗi ~/). 
+            Ví dụ: ~/Default.aspx
+            </param>
+            <param name="keepQueryString">
+            Giữ lại toàn bộ QueryString hay không?
+            True: có giữ lại toàn bộ QueryString;
+            False: loại bỏ toàn bộ QueryString.
+            </param>
+            <returns>
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.UrlUtility.ToClientUrl(System.String)">
+            <summary>
+            Chuyển đổi một url dạng bất kỳ về dạng client (ví dụ: ../Default.aspx).
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </summary>
+            <param name="url">
+            Url dạng relative (bắt đầu bằng chuỗi ~/). 
+            Ví dụ: ~/Default.aspx
+            </param>
+            <returns>
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.UrlUtility.ToAbsoluteUrl(System.String,System.Boolean,System.Exception@)">
+            <summary>
+            Chuyển đổi một url dạng bất kỳ về dạng absolute (ví dụ: http://domain.com/Default.aspx).
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </summary>
+            <param name="url">
+            Url dạng relative (bắt đầu bằng chuỗi ~/). 
+            Ví dụ: ~/Default.aspx
+            </param>
+            <param name="keepQueryString">
+            Giữ lại toàn bộ QueryString hay không?
+            True: có giữ lại toàn bộ QueryString;
+            False: loại bỏ toàn bộ QueryString.
+            </param>
+            <param name="error">Chứa lỗi ngoại lệ (nếu có) trong quá trình chuyển đổi url.</param>
+            <returns>
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.UrlUtility.ToAbsoluteUrl(System.String,System.Exception@)">
+            <summary>
+            Chuyển đổi một url dạng bất kỳ về dạng absolute (ví dụ: http://domain.com/Default.aspx).
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </summary>
+            <param name="url">
+            Url dạng relative (bắt đầu bằng chuỗi ~/). 
+            Ví dụ: ~/Default.aspx
+            </param>
+            <param name="error">Chứa lỗi ngoại lệ (nếu có) trong quá trình chuyển đổi url.</param>
+            <returns>
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.UrlUtility.ToAbsoluteUrl(System.String,System.Boolean)">
+            <summary>
+            Chuyển đổi một url dạng bất kỳ về dạng absolute (ví dụ: http://domain.com/Default.aspx).
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </summary>
+            <param name="url">
+            Url dạng relative (bắt đầu bằng chuỗi ~/). 
+            Ví dụ: ~/Default.aspx
+            </param>
+            <param name="keepQueryString">
+            Giữ lại toàn bộ QueryString hay không?
+            True: có giữ lại toàn bộ QueryString;
+            False: loại bỏ toàn bộ QueryString.
+            </param>
+            <returns>
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.UrlUtility.ToAbsoluteUrl(System.String)">
+            <summary>
+            Chuyển đổi một url dạng bất kỳ về dạng absolute (ví dụ: http://domain.com/Default.aspx).
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </summary>
+            <param name="url">
+            Url dạng relative (bắt đầu bằng chuỗi ~/). 
+            Ví dụ: ~/Default.aspx
+            </param>
+            <returns>
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.UrlUtility.ToAbsoluteSecureUrl(System.String,System.Boolean,System.Exception@)">
+            <summary>
+            Chuyển đổi một url dạng bất kỳ về dạng secure absolute (ví dụ: https://domain.com/Default.aspx).
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </summary>
+            <param name="url">
+            Url dạng relative (bắt đầu bằng chuỗi ~/). 
+            Ví dụ: ~/Default.aspx
+            </param>
+            <param name="keepQueryString">
+            Giữ lại toàn bộ QueryString hay không?
+            True: có giữ lại toàn bộ QueryString;
+            False: loại bỏ toàn bộ QueryString.
+            </param>
+            <param name="error">Chứa lỗi ngoại lệ (nếu có) trong quá trình chuyển đổi url.</param>
+            <returns>
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.UrlUtility.ToAbsoluteSecureUrl(System.String,System.Exception@)">
+            <summary>
+            Chuyển đổi một url dạng bất kỳ về dạng secure absolute (ví dụ: https://domain.com/Default.aspx).
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </summary>
+            <param name="url">
+            Url dạng relative (bắt đầu bằng chuỗi ~/). 
+            Ví dụ: ~/Default.aspx
+            </param>
+            <param name="error">Chứa lỗi ngoại lệ (nếu có) trong quá trình chuyển đổi url.</param>
+            <returns>
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.UrlUtility.ToAbsoluteSecureUrl(System.String,System.Boolean)">
+            <summary>
+            Chuyển đổi một url dạng bất kỳ về dạng absolute (ví dụ: http://domain.com/Default.aspx).
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </summary>
+            <param name="url">
+            Url dạng relative (bắt đầu bằng chuỗi ~/). 
+            Ví dụ: ~/Default.aspx
+            </param>
+            <param name="keepQueryString">
+            Giữ lại toàn bộ QueryString hay không?
+            True: có giữ lại toàn bộ QueryString;
+            False: loại bỏ toàn bộ QueryString.
+            </param>
+            <returns>
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.UrlUtility.ToAbsoluteSecureUrl(System.String)">
+            <summary>
+            Chuyển đổi một url dạng bất kỳ về dạng absolute (ví dụ: http://domain.com/Default.aspx).
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </summary>
+            <param name="url">
+            Url dạng relative (bắt đầu bằng chuỗi ~/). 
+            Ví dụ: ~/Default.aspx
+            </param>
+            <returns>
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.UrlUtility.ToPhysicalUrl(System.String,System.Exception@)">
+            <summary>
+            Chuyển đổi một url dạng bất kỳ về dạng vật lý (ví dụ: C:\Website\Default.aspx).
+            Loại bỏ tất cả Query String nếu có.
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </summary>
+            <param name="url">
+            Url dạng relative (bắt đầu bằng chuỗi ~/). 
+            Ví dụ: ~/Default.aspx
+            </param>
+            <param name="error">Chứa lỗi ngoại lệ (nếu có) trong quá trình chuyển đổi url.</param>
+            <returns>
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.UrlUtility.ToPhysicalUrl(System.String)">
+            <summary>
+            Chuyển đổi một url dạng bất kỳ về dạng vật lý (ví dụ: C:\Website\Default.aspx).
+            Loại bỏ tất cả Query String nếu có.
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </summary>
+            <param name="url">
+            Url dạng relative (bắt đầu bằng chuỗi ~/). 
+            Ví dụ: ~/Default.aspx
+            </param>
+            <returns>
+            Trả về url đã chuyển đổi. Nếu chuyển đổi không thành công thì trả về chuỗi rỗng.
+            Lưu ý: Url chỉ được áp dụng cho webpage hiện tại.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.UrlUtility.ToUrl(System.String,CodeUtility.UrlType,System.Boolean,System.Exception@)">
+             <summary>
+             Chuyển đổi định dạng url. Có bắt lỗi ngoại lệ (nếu có).
+             Nếu url không hợp lệ, hoặc hàm này không được gọi từ một Web Page hợp lệ, hoặc có lỗi ngoại lệ thì trả về chuỗi rỗng.
+             Lưu ý: Url được chuyển đổi dựa vào vị trí tương đối của Url so với Web Page gọi hàm.
+             </summary>
+             <param name="url">
+             Giá trị cần cần chuyển đổi thành url  
+             VD: demo.jpg; ~/images/demo.jpg; ../images/demo.jpg; /images/demo.jpg; http://demo.com/images/demo.jpg; c:\website\images\demo.jpg; 
+            </param>
+             <param name="urlType">Kiểu của url.</param>
+             <param name="keepQueryString">
+             Giữ lại toàn bộ QueryString hay không?
+             True: có giữ lại toàn bộ QueryString, ngoại trừ urlType = PhysicalUrl thì không giữ lại QueryString;
+             False: loại bỏ toàn bộ QueryString.
+             </param>
+             <param name="error">Chứa lỗi ngoại lệ (nếu có) trong quá trình chuyển đổi url.</param>
+             <returns>
+             Trả về url đã được chuyển đổi. Có bắt lỗi ngoại lệ (nếu có).
+             Nếu url không hợp lệ, hoặc hàm này không được gọi từ một Web Page hợp lệ thì trả về chuỗi rỗng.
+             Lưu ý: Url được chuyển đổi dựa vào vị trí tương đối của Url so với Web Page gọi hàm.
+             </returns>
+        </member>
+        <member name="M:CodeUtility.UrlUtility.ToUrl(System.String,CodeUtility.UrlType,System.Exception@)">
+             <summary>
+             Chuyển đổi định dạng url. Có bắt lỗi ngoại lệ (nếu có).
+             Nếu url không hợp lệ, hoặc hàm này không được gọi từ một Web Page hợp lệ, hoặc có lỗi ngoại lệ thì trả về chuỗi rỗng.
+             Lưu ý: Url được chuyển đổi dựa vào vị trí tương đối của Url so với Web Page gọi hàm.
+             </summary>
+             <param name="url">
+             Giá trị cần cần chuyển đổi thành url  
+             VD: demo.jpg; ~/images/demo.jpg; ../images/demo.jpg; /images/demo.jpg; http://demo.com/images/demo.jpg; c:\website\images\demo.jpg; 
+            </param>
+             <param name="urlType">Kiểu của url.</param>
+             <param name="error">Chứa lỗi ngoại lệ (nếu có) trong quá trình chuyển đổi url.</param>
+             <returns>
+             Trả về url đã được chuyển đổi. Có bắt lỗi ngoại lệ (nếu có).
+             Nếu url không hợp lệ, hoặc hàm này không được gọi từ một Web Page hợp lệ thì trả về chuỗi rỗng.
+             Lưu ý: Url được chuyển đổi dựa vào vị trí tương đối của Url so với Web Page gọi hàm.
+             </returns>
+        </member>
+        <member name="M:CodeUtility.UrlUtility.ToUrl(System.String,CodeUtility.UrlType,System.Boolean)">
+             <summary>
+             Chuyển đổi định dạng url. Có bắt lỗi ngoại lệ (nếu có).
+             Nếu url không hợp lệ, hoặc hàm này không được gọi từ một Web Page hợp lệ, hoặc có lỗi ngoại lệ thì trả về chuỗi rỗng.
+             Lưu ý: Url được chuyển đổi dựa vào vị trí tương đối của Url so với Web Page gọi hàm.
+             </summary>
+             <param name="url">
+             Giá trị cần cần chuyển đổi thành url  
+             VD: demo.jpg; ~/images/demo.jpg; ../images/demo.jpg; /images/demo.jpg; http://demo.com/images/demo.jpg; c:\website\images\demo.jpg; 
+            </param>
+             <param name="urlType">Kiểu của url.</param>
+             <param name="keepQueryString">
+             Giữ lại toàn bộ QueryString hay không?
+             True: có giữ lại toàn bộ QueryString, ngoại trừ urlType = PhysicalUrl thì không giữ lại QueryString;
+             False: loại bỏ toàn bộ QueryString.
+             </param>
+             <returns>
+             Trả về url đã được chuyển đổi. Có bắt lỗi ngoại lệ (nếu có).
+             Nếu url không hợp lệ, hoặc hàm này không được gọi từ một Web Page hợp lệ thì trả về chuỗi rỗng.
+             Lưu ý: Url được chuyển đổi dựa vào vị trí tương đối của Url so với Web Page gọi hàm.
+             </returns>
+        </member>
+        <member name="M:CodeUtility.UrlUtility.ToUrl(System.String,CodeUtility.UrlType)">
+             <summary>
+             Chuyển đổi định dạng url. Có bắt lỗi ngoại lệ (nếu có).
+             Nếu url không hợp lệ, hoặc hàm này không được gọi từ một Web Page hợp lệ, hoặc có lỗi ngoại lệ thì trả về chuỗi rỗng.
+             Lưu ý: Url được chuyển đổi dựa vào vị trí tương đối của Url so với Web Page gọi hàm.
+             </summary>
+             <param name="url">
+             Giá trị cần cần chuyển đổi thành url
+             VD: demo.jpg; ~/images/demo.jpg; ../images/demo.jpg; /images/demo.jpg; http://demo.com/images/demo.jpg; c:\website\images\demo.jpg; 
+            </param>
+             <param name="urlType">Kiểu của url.</param>
+             <returns>
+             Trả về url đã được chuyển đổi. Có bắt lỗi ngoại lệ (nếu có).
+             Nếu url không hợp lệ, hoặc hàm này không được gọi từ một Web Page hợp lệ thì trả về chuỗi rỗng.
+             Lưu ý: Url được chuyển đổi dựa vào vị trí tương đối của Url so với Web Page gọi hàm.
+             </returns>
+        </member>
+        <member name="T:CodeUtility.ValidationUtility">
+            <summary>
+            ValidationUtility
+            </summary>
+        </member>
+        <member name="M:CodeUtility.ValidationUtility.IsMatch(System.Object,System.String)">
+            <summary>
+            Kiểm tra giá trị đầu vào là khớp với mẫu pattern hay không?
+            Nếu đúng, thì trả về true; Ngược lại, trả về false.
+            </summary>
+            <param name="value">Giá trị cần kiểm tra.</param>
+            <param name="pattern">Mẫu dùng để so khớp.</param>
+            <returns>Nếu đúng, thì trả về true; Ngược lại, trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.ValidationUtility.IsNull(System.Object)">
+            <summary>
+            Kiểm tra giá trị value là null hay không?
+            Nếu value là null, thì trả về true; Ngược lại, trả về false.
+            </summary>
+            <param name="value">Giá trị cần kiểm tra.</param>
+            <returns>Nếu value là null, thì trả về true; Ngược lại, trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.ValidationUtility.IsEmpty(System.Object)">
+            <summary>
+            Kiểm tra giá trị value là Empty hay không?
+            Nếu đúng, thì trả về true; Ngược lại, trả về false.
+            </summary>
+            <param name="value">Giá trị cần kiểm tra.</param>
+            <returns>Nếu đúng, thì trả về true; Ngược lại, trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.ValidationUtility.IsNullOrEmpty(System.Object)">
+            <summary>
+            Kiểm tra giá trị value là Null hoặc Empty hay không?
+            Nếu đúng, thì trả về true; Ngược lại, trả về false.
+            </summary>
+            <param name="value">Giá trị cần kiểm tra</param>
+            <returns>Nếu đúng, thì trả về true; Ngược lại, trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.ValidationUtility.IsWhiteSpaces(System.Object)">
+            <summary>
+            Kiểm tra giá trị value là toàn khoảng trắng hay không?
+            Nếu đúng, trả về true; Ngược lại, trả về false.
+            </summary>
+            <param name="value">Giá trị cần kiểm tra.</param>
+            <returns>Nếu đúng, trả về true; Ngược lại, trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.ValidationUtility.IsNullOrEmptyOrWhiteSpaces(System.Object)">
+            <summary>
+            Kiểm tra giá trị đầu vào là Null hoặc Empty hoặc toàn khoảng trắng hay không?
+            Nếu đúng, thì trả về true; Ngược lại, trả về false.
+            </summary>
+            <param name="value">Giá trị cần kiểm tra.</param>
+            <returns>Nếu đúng, thì trả về true; Ngược lại, trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.ValidationUtility.IsOnlyNumeric(System.Object)">
+            <summary>
+            Kiểm tra giá trị đầu vào là toàn số hay không?
+            Nếu đúng, thì trả về true; Ngược lại, trả về false.
+            </summary>
+            <param name="value">Giá trị cần kiểm tra.</param>
+            <returns>Nếu đúng, thì trả về true; Ngược lại, trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.ValidationUtility.IsOnlyLetter(System.Object)">
+            <summary>
+            Kiểm tra giá trị đầu vào là toàn chữ cái hay không?
+            Nếu đúng, thì trả về true; Ngược lại, trả về false.
+            </summary>
+            <param name="value">Giá trị cần kiểm tra.</param>
+            <returns>Nếu đúng, thì trả về true; Ngược lại, trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.ValidationUtility.IsOnlyLetterAndNumeric(System.Object)">
+            <summary>
+            Kiểm tra giá trị đầu vào là toàn chữ cái, hoặc toàn số, hoặc chữ cái với số hay không?
+            Nếu đúng, trả về true; Ngược lại, trả về false.
+            </summary>
+            <param name="value">Giá trị cần kiểm tra.</param>
+            <returns>Nếu đúng, trả về true; Ngược lại, trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.ValidationUtility.IsEmailFormat(System.Object)">
+            <summary>
+            Kiểm tra giá trị đầu vào có định dạng là địa chỉ email hay không?
+            Nếu đúng, thì trả về true; Ngược lại, trả về false.
+            </summary>
+            <param name="value">Giá trị cần kiểm tra.</param>
+            <returns>Nếu đúng, thì trả về true; Ngược lại, trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.ValidationUtility.IsIPFormat(System.Object)">
+            <summary>
+            Kiểm tra giá trị đầu vào có định dạng là địa chỉ IP hay không?
+            Nếu đúng, thì trả về true; Ngược lại, trả về false.
+            </summary>
+            <param name="value">Giá trị cần kiểm tra.</param>
+            <returns>Nếu đúng, thì trả về true; Ngược lại, trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.ValidationUtility.IsDateFormat(System.Object)">
+            <summary>
+            Kiểm tra giá trị đầu vào có định dạng ngày tháng năm hợp lệ hay không?
+            Nếu đúng, thì trả về true; Ngược lại, trả về false.
+            </summary>
+            <param name="value">Giá trị cần kiểm tra.</param>
+            <returns>Nếu đúng, thì trả về true; Ngược lại, trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.ValidationUtility.IsTimeFormat(System.Object)">
+            <summary>
+            Kiểm tra giá trị đầu vào có định dạng thời gian hợp lệ hay không?
+            Nếu đúng, thì trả về true; Ngược lại, trả về false.
+            </summary>
+            <param name="value">Giá trị cần kiểm tra.</param>
+            <returns>Nếu đúng, thì trả về true; Ngược lại, trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.ValidationUtility.IsImageFileUrl(System.Object)">
+            <summary>
+            Kiểm tra giá trị đầu vào có định dạng là url đến một file hình ảnh hay không?
+            Các loại file hình được hỗ trợ: *.jpg; *.jpeg; *.gif; *.png; *.bmp;
+            Nếu đúng, thì trả về true; Ngược lại, trả về false.
+            </summary>
+            <param name="value">Giá trị cần kiểm tra.</param>
+            <returns>Nếu đúng, thì trả về true; Ngược lại, trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.ValidationUtility.IsDocumentFileUrl(System.Object)">
+            <summary>
+            Kiểm tra giá trị đầu vào có định dạng là url đến một file tài liệu hay không?
+            Các loại file tài liệu được hỗ trợ: *.doc; *.docx; *.xls; *.xlsx; *.ppt; *.pptx; *.txt; *.pdf;
+            Nếu đúng, thì trả về true; Ngược lại, trả về false.
+            </summary>
+            <param name="value">Giá trị cần kiểm tra.</param>
+            <returns>Nếu đúng, thì trả về true; Ngược lại, trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.ValidationUtility.IsCompressFileUrl(System.Object)">
+            <summary>
+            Kiểm tra giá trị đầu vào có định dạng là url đến một file nén hay không?
+            Các loại file nén được hỗ trợ: *.rar; *.zip;
+            Nếu đúng, thì trả về true; Ngược lại, trả về false.
+            </summary>
+            <param name="value">Giá trị cần kiểm tra.</param>
+            <returns>Nếu đúng, thì trả về true; Ngược lại, trả về false.</returns>
+        </member>
+        <member name="M:CodeUtility.ValidationUtility.IsImageOrDocumentOrCompressFileUrl(System.Object)">
+            <summary>
+            Kiểm tra giá trị đầu vào có định dạng là url đến một file hình hoặc file tài liệu hoặc file nén hay không?
+            Các loại file hình được hỗ trợ: *.jpg; *.jpeg; *.gif; *.png; *.bmp;
+            Các loại file tài liệu được hỗ trợ: *.doc; *.docx; *.xls; *.xlsx; *.ppt; *.pptx; *.txt; *.pdf;
+            Các loại file nén được hỗ trợ: *.rar; *.zip;
+            Nếu đúng, thì trả về true; Ngược lại, trả về false.
+            </summary>
+            <param name="value">Giá trị cần kiểm tra.</param>
+            <returns>Nếu đúng, thì trả về true; Ngược lại, trả về false.</returns>
+        </member>
+    </members>
+</doc>

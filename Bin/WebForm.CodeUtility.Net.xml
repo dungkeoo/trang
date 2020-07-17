@@ -1,0 +1,281 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebForm.CodeUtility.Net</name>
+    </assembly>
+    <members>
+        <member name="T:CodeUtility.MessageUtility">
+            <summary>
+            Message Utility
+            </summary>
+        </member>
+        <member name="M:CodeUtility.MessageUtility.OnInit(System.EventArgs)">
+            <summary>
+            Hàm này tự động chạy khi user control được khởi tạo.
+            </summary>
+            <param name="e">EventArgs</param>
+        </member>
+        <member name="M:CodeUtility.MessageUtility.ShowError(System.String,System.String)">
+            <summary>
+            Hiển thị thông báo dạng lỗi
+            </summary>
+            <param name="message">Nội dung thông báo</param>
+            <param name="title">Tiêu đề của thông báo. Mặc định = null.</param>
+        </member>
+        <member name="M:CodeUtility.MessageUtility.ShowSuccess(System.String,System.String)">
+            <summary>
+            Hiển thị thông báo dạng thành công.
+            </summary>
+            <param name="message">Nội dung thông báo</param>
+            <param name="title">Tiêu đề của thông báo. Mặc định = null.</param>
+        </member>
+        <member name="M:CodeUtility.MessageUtility.ShowWarning(System.String,System.String)">
+            <summary>
+            Hiển thị thông báo dạng cảnh báo
+            </summary>
+            <param name="message">Nội dung thông báo</param>
+            <param name="title">Tiêu đề của thông báo. Mặc định = null.</param>
+        </member>
+        <member name="M:CodeUtility.MessageUtility.ShowInfo(System.String,System.String)">
+            <summary>
+            Hiển thị thông báo dạng thông tin
+            </summary>
+            <param name="message">Nội dung thông báo</param>
+            <param name="title">Tiêu đề của thông báo. Mặc định = null.</param>
+        </member>
+        <member name="M:CodeUtility.MessageUtility.HideAll">
+            <summary>
+            Ẩn tất cả thông báo.
+            </summary>
+        </member>
+        <member name="T:CodeUtility.MetaTagUtility">
+            <summary>
+            Meta Tag Utility
+            </summary>
+        </member>
+        <member name="M:CodeUtility.MetaTagUtility.#ctor">
+            <summary>
+            Khởi tạo đối tượng
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MetaTagUtility.Title">
+            <summary>
+            Tiêu đề của trang web
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MetaTagUtility.Description">
+            <summary>
+            Mô tả của trang web
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MetaTagUtility.Keywords">
+            <summary>
+            Từ khóa của trang web
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MetaTagUtility.CanonicalUrl">
+            <summary>
+            Link gốc của trang web
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MetaTagUtility.Charset">
+            <summary>
+            Charset của trang web
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MetaTagUtility.Robots">
+            <summary>
+            Robots của trang web
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MetaTagUtility.SiteName">
+            <summary>
+            SiteName của trang web
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MetaTagUtility.SiteType">
+            <summary>
+            SiteType của trang web
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MetaTagUtility.PageType">
+            <summary>
+            PageType của trang web. Ví dụ: Article
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MetaTagUtility.IsForceUriToHttps">
+            <summary>
+            Xuất url ra định dạng https
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MetaTagUtility.GoogleAuthor">
+            <summary>
+            Tác giả (Google +)
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MetaTagUtility.GooglePublisher">
+            <summary>
+            Người đăng (Google +)
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MetaTagUtility.ImageUrl">
+            <summary>
+            Hình đại diện của trang web
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MetaTagUtility.ImageSecureUrl">
+            <summary>
+            Hình đại diện dạng https của trang web
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MetaTagUtility.ImageType">
+            <summary>
+            Loại hình đại diện của trang web
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MetaTagUtility.ImageWidth">
+            <summary>
+            Chiều dài hình đại diện của trang web
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MetaTagUtility.ImageHeight">
+            <summary>
+            Chiều cao đại diện của trang web
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MetaTagUtility.FaceBookAppID">
+            <summary>
+            FaceBookAppID của trang web
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MetaTagUtility.FaceBookAdmins">
+            <summary>
+            FaceBookAdmins của trang web
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MetaTagUtility.FaceBookPageID">
+            <summary>
+            FaceBookPageID của trang web
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MetaTagUtility.FacebookAuthor">
+            <summary>
+            Tác giả (Facebook +)
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MetaTagUtility.FacebookPublisher">
+            <summary>
+            Người đăng (Facebook +)
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MetaTagUtility.Locale">
+            <summary>
+            Mã ngôn ngữ của trang web
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MetaTagUtility.GoogleSiteVerification">
+            <summary>
+            Mã chứng thực site với Google
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MetaTagUtility.BingSiteVerification">
+            <summary>
+            Mã chứng thực site với Bing
+            </summary>
+        </member>
+        <member name="P:CodeUtility.MetaTagUtility.AlexaSiteVerification">
+            <summary>
+            Mã chứng thực site với Alexa
+            </summary>
+        </member>
+        <member name="M:CodeUtility.MetaTagUtility.SetMetaTags(System.Exception@)">
+            <summary>
+            Thiết lập toàn bộ Meta Tags cho trang. Có bắt lỗi ngoại lệ nếu có.
+            </summary>
+            <param name="error">Chứa lỗi ngoại lệ trong quá trình thiết lập Meta Tag.</param>
+            <returns>
+            Trả về True nếu thiết lập tất cả các Meta Tags thành công. Ngược lại, trả về False.
+            </returns>
+        </member>
+        <member name="M:CodeUtility.MetaTagUtility.SetMetaTags">
+            <summary>
+            Thiết lập toàn bộ Meta Tags cho trang.
+            </summary>
+            <returns>
+            Trả về True nếu thiết lập tất cả các Meta Tags thành công. Ngược lại, trả về False.
+            </returns>
+        </member>
+        <member name="T:CodeUtility.PaggingUtility">
+            <summary>
+            Pagging Utility
+            </summary>
+        </member>
+        <member name="M:CodeUtility.PaggingUtility.OnInit(System.EventArgs)">
+            <summary>
+            Hàm này tự động chạy khi user control được khởi tạo.
+            </summary>
+            <param name="e">EventArgs</param>
+        </member>
+        <member name="M:CodeUtility.PaggingUtility.PageRepeater_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            Hàm xử lý nội dung bên trong PageRepeater khi load dữ liệu
+            </summary>
+            <param name="sender">Đối tượng gọi hàm</param>
+            <param name="e">RepeaterItemEventArgs</param>
+        </member>
+        <member name="M:CodeUtility.PaggingUtility.BindPagesNumber">
+            <summary>
+            Xử lý danh sách số trang
+            </summary>
+        </member>
+        <member name="M:CodeUtility.PaggingUtility.ResolvePagingCssUrl">
+            <summary>
+            Phân giải url đến file css
+            </summary>
+        </member>
+        <member name="M:CodeUtility.PaggingUtility.GetActiveClass(System.Object,System.String,System.String)">
+            <summary>
+            Tính toán active class
+            </summary>
+            <param name="page">Giá trị của trang cần tính toán active class.</param>
+            <param name="activeClass">Tên class khi active.</param>
+            <param name="defaultClass">Tên class mặc định.</param>
+            <returns></returns>
+        </member>
+        <member name="P:CodeUtility.PaggingUtility.CurrentPage">
+            <summary>
+            Trang hiện tại
+            </summary>
+        </member>
+        <member name="P:CodeUtility.PaggingUtility.TotalPages">
+            <summary>
+            Tổng số trang
+            </summary>
+        </member>
+        <member name="P:CodeUtility.PaggingUtility.TotalItems">
+            <summary>
+            Tổng số phần tử
+            </summary>
+        </member>
+        <member name="P:CodeUtility.PaggingUtility.MaxPage">
+            <summary>
+            Số lượng trang tối đa cho phép hiển thị.
+            </summary>
+        </member>
+        <member name="P:CodeUtility.PaggingUtility.PageSize">
+            <summary>
+            Số lượng phần tử được phép hiển thị trên một trang.
+            </summary>
+        </member>
+        <member name="P:CodeUtility.PaggingUtility.URL">
+            <summary>
+            Mẫu url sẽ chuyển đến khi bấm vào các giá trị phân trang.
+            </summary>
+        </member>
+        <member name="M:CodeUtility.PaggingUtility.DataBind">
+            <summary>
+            Load dữ liệu cho Pagging
+            </summary>
+        </member>
+    </members>
+</doc>

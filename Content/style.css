@@ -1,0 +1,704 @@
+﻿/*#region header */
+
+header {
+    background: #1c1c1c;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+    header .logo {
+        float: left;
+        margin: 2px 0;
+        min-width: 130px;
+        height: 35px;
+        background: url('images/logo/logo-top.png') no-repeat;
+        background-position: center center;
+    }
+
+    header .search {
+        float: left;
+        margin: 5px 0;
+    }
+
+    header .branch {
+        margin: 5px 0;
+    }
+
+        header .branch li {
+            display: inline-block;
+            margin: 5px 0;
+            padding-right: 10px;
+        }
+
+            header .branch li a {
+                color: #fff;
+                text-transform: uppercase;
+                display: block;
+                font-size: 15px;
+            }
+
+                header .branch li a:hover {
+                    color: #ff00f2;
+                }
+
+    header .account {
+        float: right;
+        text-align: right;
+        margin: 5px 0;
+    }
+
+        header .account li {
+            display: inline-block;
+            margin: 5px 0;
+            color: #fff;
+        }
+
+            header .account li a {
+                color: #fff;
+            }
+
+                header .account li a:hover {
+                    text-decoration: underline;
+                }
+
+/*#endregion */
+
+/*#region nav */
+
+#menu {
+    background-image: none;
+    background-color: #e4e4e4;
+    min-height: 30px;
+    padding: 0;
+}
+
+#menu .navbar-nav li a {
+    padding: 10px 10px;
+    color: #000;
+}
+
+#menu .navbar-nav li:hover {
+    background-color: #fff;
+}
+
+#menu .collapse:not(.in) .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/*#endregion */
+
+/*#region content */
+
+/*#region container */
+
+content .container {
+    background-color: #fff;
+    margin-top: -20px;
+    padding: 12px 10px;
+}
+
+/*#endregion */
+
+/*#region main-slider */
+content #main-slider .full-box  .item {
+    padding: 0 5px;
+}
+
+content #main-slider .thumb-box {
+    margin: 0;
+}
+
+content #main-slider .thumb-box div {
+    padding: 5px;
+}
+
+content #main-slider .thumb-box div.active img {
+    background-color: #800080;
+}
+/*#endregion */
+
+/*#region h3-title */
+content section h3 {
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 0 5px;
+    color: #9F0080;
+    margin-top: 10px;
+}
+
+content section h3 a {
+    color: #9F0080;
+}
+
+content section h3 .fa {
+    font-size: 25px;
+    transition: all 0.5s ease-in;
+}
+
+content section h3:hover .fa {
+    color: #e500b8;
+    transform: rotate(360deg);
+}
+
+content section a.right-icon {
+    font-size: 30px;
+    color: #800080;
+    margin-top: 2px;
+    transition: all .5s ease-in;
+}
+
+content section a.right-icon:hover {
+    color: #bb00bb;
+    transform: rotate(360deg);
+}
+/*#endregion */
+
+/*#region btn-group */
+
+content section .btn-group {
+    margin-top: 8px;
+    padding: 0 5px;
+}
+
+/*#endregion */
+
+/*#region thumb-item */
+
+content .thumb-item {
+    padding: 15px;
+}
+
+content .thumb-item li {
+    padding: 5px;
+}
+
+content .thumb-item li small {
+    color: #808080;
+    display: block;
+}
+
+content .thumb-item li small:hover {
+    color: #800080;
+}
+
+/*#endregion */
+
+/*#region hot-new-viet */
+content #hot-new-viet {
+
+}
+
+content #hot-new-viet section {
+
+}
+
+content #hot-new-viet section ul {
+    padding: 0 5px;
+}
+
+content #hot-new-viet section li {
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+content #hot-new-viet section li:last-child {
+    border-bottom: none;
+}
+
+content #hot-new-viet section li .thumb {
+    float: left;
+
+}
+
+content #hot-new-viet section li .thumb img {
+    width: 50px;
+    height: 50px;
+}
+
+content #hot-new-viet section li .info {
+    padding: 7px;
+    float: left;
+}
+
+content #hot-new-viet section li .info .title {
+    display: block;
+}
+
+content #hot-new-viet section li .info .artist {
+    font-size: 0.9em;
+    color: #909090;
+}
+
+content #hot-new-viet section li .info .artist:hover {
+    color: #800080;
+}
+
+content #hot-new-viet section li .tool {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 18px;
+    padding: 18px;
+    display: none;
+}
+
+content #hot-new-viet section li:hover .tool {
+    display: block;
+}
+
+content #hot-new-viet section#new-viet {
+    border-left: 1px solid #ccc;
+}
+
+/*#endregion */
+
+/*#region hot-artist */
+content #hot-artist > .row {
+    margin: 0;
+}
+
+content #hot-artist > .row .main-box {
+    padding: 5px;
+}
+
+content #hot-artist > .row .list-box li {
+    padding: 5px;
+}
+
+content #hot-artist > .row .main-box .hover-overlay:before {
+    border: 5px solid #800080;
+}
+
+content #hot-artist > .row .list-box li img {
+    border-radius: 50%;
+}
+
+content #hot-artist > .row .list-box li .hover-overlay:before {
+    border-radius: 50%;
+    border: 5px solid #800080;
+}
+
+content #hot-artist div a {
+    color: white;
+}
+/*#endregion */
+
+/*#region news-music */
+content #news-music ul {
+    margin: 0;
+    margin-bottom: 5px; /*Xử lý thêm cho phần right-category*/
+}
+
+content #news-music li {
+    padding: 5px;
+}
+
+content #news-music li .static-overlay:before {
+    border-radius: 5px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    height: 80%;
+}
+/*#endregion */
+
+/*#region hot-video-footer */
+#hot-video-footer {
+
+}
+
+#hot-video-footer ul li a {
+    position: relative;
+    display: block;
+}
+
+#hot-video-footer ul li a span {
+    display: block;
+}
+
+#hot-video-footer ul li a i {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    padding: 10px;
+    color: #800080;
+}
+
+#hot-video-footer ul li a:hover i {
+    display: block;
+}
+/*#endregion */
+
+/*#region parner */
+#parner {
+    border-top: 1px solid #efefef;
+    padding-top: 10px;
+    margin: 0 10px;
+}
+
+#parner ul {
+    margin: 0 -10px;
+}
+
+#parner ul li {
+    padding: 0 5px;
+}
+
+#parner ul li:first-child {
+    text-transform: uppercase;
+    font-size: 17px;
+    text-align: left;
+    padding-top: 12px;
+}
+/*#endregion */
+
+/*#endregion */
+
+/*#region right-content */
+
+/*#region right-category */
+content #right-category ul {
+    margin: 0;
+}
+
+content #right-category li {
+    padding: 0 5px 10px 5px;
+}
+
+content #right-category li .static-overlay:before {
+    border-radius: 5px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    height: 80%;
+}
+
+content #right-category li a {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+/*#endregion */
+
+/*#region right-top-song:firstchild, right-top-video:firstchild, right-top-album:firstchild */
+content #right-top-song,
+content #right-top-video,
+content #right-top-album {
+    margin-top: 15px;
+}
+
+content #right-top-song .tab-content li.static-overlay:before,
+content #right-top-video .tab-content li.static-overlay:before,
+content #right-top-album .tab-content li.static-overlay:before {
+    border-radius: 5px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    height: 50%;
+}
+
+content #right-top-song .tab-content li:first-child .title .number,
+content #right-top-video .tab-content li:first-child .title .number,
+content #right-top-album .tab-content li:first-child .title .number {
+    font-size: 25px;
+    font-weight: bold;
+    padding-right: 15px;
+    float: left;
+    line-height: 36px;
+}
+
+content #right-top-song .tab-content li:first-child .title .info,
+content #right-top-video .tab-content li:first-child .title .info,
+content #right-top-album .tab-content li:first-child .title .info {
+    float: left;
+}
+
+content #right-top-song .tab-content li:first-child .title .info .song a, 
+content #right-top-video .tab-content li:first-child .title .info .song a,
+content #right-top-album .tab-content li:first-child .title .info .song a {
+    display: block;
+    color: #fff;
+    line-height: 18px;
+    font-weight: bold;
+}
+
+content #right-top-song .tab-content li:first-child .title .info .artist a,
+content #right-top-video .tab-content li:first-child .title .info .artist a,
+content #right-top-album .tab-content li:first-child .title .info .artist a {
+    display: block;
+    color: #fff;
+    line-height: 18px;
+    font-size: 12px;
+}
+
+content #right-top-song .tab-content li:first-child .title .view-time,
+content #right-top-video .tab-content li:first-child .title .view-time,
+content #right-top-album .tab-content li:first-child .title .view-time {
+    float: right;
+    color: #a3a3a3;
+    line-height: 36px;
+}
+/*#endregion */
+
+/*#region right-top-song:other */
+content #right-top-song .tab-content  li:not(:first-child) {
+    padding: 12px;
+    clear: both;
+    border-bottom: 1px solid #e4e4e4;
+    height: 55px;
+}
+
+content #right-top-song .tab-content  li:not(:first-child) .number {
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 15px;
+    float: left;
+    line-height: 36px;
+}
+
+content #right-top-song .tab-content  li:not(:first-child) .info {
+    float: left;
+}
+
+content #right-top-song .tab-content  li:not(:first-child) .info .song a {
+    display: block;
+    color: #000;
+    line-height: 18px;
+    font-weight: bold;
+}
+
+content #right-top-song .tab-content  li:not(:first-child) .info .artist a {
+    display: block;
+    color: #a3a3a3;
+    line-height: 18px;
+    font-size: 12px;
+}
+
+content #right-top-song .tab-content  li:not(:first-child) .view-time {
+    float: right;
+    color: #a3a3a3;
+    line-height: 36px;
+}
+/*#endregion */
+
+/*#region right-top-video:other, right-top-album:other */
+content #right-top-video .tab-content  li:not(:first-child),
+content #right-top-album .tab-content  li:not(:first-child) {
+    padding: 10px 0;
+    clear:  both;
+    border-bottom: 1px solid #dedede;
+    height: 95px;
+}
+
+content #right-top-video .tab-content  li:not(:first-child) .avatar,
+content #right-top-album .tab-content  li:not(:first-child) .avatar {
+    float: left;
+    width: 130px;
+}
+
+content #right-top-video .tab-content  li:not(:first-child) .avatar:before,
+content #right-top-album .tab-content  li:not(:first-child) .avatar:before {
+    background: linear-gradient(transparent, #000);
+    height: 50%;
+}
+
+content #right-top-video .tab-content  li:not(:first-child) .avatar .number,
+content #right-top-album .tab-content  li:not(:first-child) .avatar .number {
+    font-size: 22px;
+}
+
+content #right-top-video .tab-content  li:not(:first-child) .info,
+content #right-top-album .tab-content  li:not(:first-child) .info {
+    float: left;
+    padding-left: 10px;
+    line-height: 1.8em;
+}
+
+content #right-top-video .tab-content  li:not(:first-child) .info .song,
+content #right-top-album .tab-content  li:not(:first-child) .info .song {
+    display: block;
+    font-weight: bold;
+}
+
+content #right-top-video .tab-content  li:not(:first-child) .info .artist,
+content #right-top-album .tab-content  li:not(:first-child) .info .artist {
+    display: block;
+    font-size: 0.85em;
+    color: #909090;
+}
+
+content #right-top-video .tab-content  li:not(:first-child) .info .view-time,
+content #right-top-album .tab-content  li:not(:first-child) .info .view-time {
+    display: block;
+    font-size: 0.85em;
+    color: #909090;
+}
+
+content #right-top-album .tab-content  li:not(:first-child) {
+    height: 150px;
+}
+/*#endregion */
+
+/*#region right-top-song */
+content #right-top-song .tab-content ul li {
+    position: relative;
+}
+
+content #right-top-song .tab-content ul li a i {
+    color: #a3a3a3;
+}
+
+content #right-top-song .tab-content ul li .tool {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    font-size: 15px;
+}
+
+content #right-top-song .tab-content ul li:hover .tool {
+    display: block;
+}
+
+content #right-top-song .tab-content ul li .view-time {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    font-size: 12px;
+}
+
+content #right-top-song .tab-content ul li:hover .view-time {
+    display: none;
+}
+/*#endregion */
+
+/*#endregion */
+
+/*#region footer */
+
+footer {
+    background-color: #4a4a4a;
+    color: #fff;
+    font-size: 12px;
+    padding: 20px 0;
+}
+
+footer .logo img {
+    margin: 0 20px;
+}
+
+footer .logo p {
+    margin-top: 8px;
+}
+
+footer .link li {
+    float: left;
+    width: 90px;
+    margin-bottom: 10px;
+}
+
+footer .link li a {
+    color: #fff;
+}
+
+    footer .social li {
+        background-image: url('images/icon/icon.png');
+        background-repeat: no-repeat;
+        background-color: #fff;
+        width: 34px;
+        height: 34px;
+        margin: 0 8px 8px 0;
+        display: inline-block;
+    }
+
+    footer .social li.fb {
+        background-position: -8px -318px;
+    }
+
+    footer .social li.zl {
+        background-position: -8px -2492px;
+    }
+
+    footer .social li.gp {
+        background-position: -8px -268px;
+    }
+
+    footer .social li.yt {
+        background-position: -8px -218px;
+    }
+
+    footer .social li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+/*#endregion */
+
+/*#region media */
+@media(max-width: 991px) {
+    content #hot-new-viet section#new-viet {
+    border-left: none;
+}
+}
+/*#endregion */
+
+/*#region Login */
+content .capchar {
+    height: 34px;
+}
+
+.row.less-padding {
+    margin: 0 -5px;
+}
+
+    .row.less-padding .col-md-4,
+    .row.less-padding .col-md-5,
+    .row.less-padding .col-md-2 {
+        padding: 0 5px;
+    }
+/*#endregion */
+
+
+.politespace-proxy {
+    position: relative;
+    overflow: hidden; /* clearfix for floating siblings */
+    display: inline-block;
+}
+.politespace-proxy-val {
+    display: none;
+}
+.politespace-proxy.active.notempty > .politespace-proxy-val {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 1;
+}
+/* Safari 9 has a weird top/bottom margin on form elements inside of politespace proxies */
+/* This caused issues with proxy positioning.
+.politespace-proxy > input {
+    margin-top: 0;
+    margin-bottom: 0;
+}*/
+.politespace-proxy.active.notempty input {
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+.politespace-proxy.active.notempty input[type=number] {
+    -moz-appearance: textfield;
+}
+.politespace-proxy.active.notempty input[type=number]::-webkit-inner-spin-button,
+.politespace-proxy.active.notempty input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
